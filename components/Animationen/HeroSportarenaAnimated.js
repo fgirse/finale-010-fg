@@ -7,7 +7,7 @@ const HeroSportarenaAnimated = () => {
   const HeroSportarenaRef = useRef()
 
   useEffect(() => {
-    console.log(HerokontaktRef)
+    console.log(HeroSportarenaRef)
     gsap.fromTo("#box", {autoAlpha: 0}, {autoAlpha: 1.0, duration: 5});
   }, [])
   
