@@ -1,0 +1,9 @@
+# Query: color-adjust
+# ContextLines: 1
+
+1 Ergebnis - 1 Datei
+
+node_modules\autoprefixer\lib\prefixes.js:
+  54  let hackGridColumnAlign = require('./hacks/grid-column-align')
+  55: let hackPrintColorAdjust = require('./hacks/print-color-adjust')
+  56  let hackOverscrollBehavior = require('./hacks/overscroll-behavior'
