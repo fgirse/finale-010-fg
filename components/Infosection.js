@@ -5,7 +5,7 @@ import { useState} from 'react';
 import { faBeer, faBirthdayCake, faCircleArrowRight, faCircleQuestion, faHistory, faHome, faPeopleGroup, faVolleyball } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Albers from '../components/icons/svg/Albers'
-
+import Arrow from "../components/icons/svg/Arrow"
 
 export default function Infosection ()  {
  
@@ -15,7 +15,7 @@ export default function Infosection ()  {
                       return(
 
                       <>
-                      <section className=" overflow-hidden sticky -top-0 z-50 h-20 w-[100vw] mx-auto md:hidden lg:bg-amber-800 lg:block :bg-block">
+                      <section className=" bg-slate-900 overflow-hidden sticky -top-0 z-50 h-20 w-[100vw] mx-auto md:hidden lg:bg-amber-800 lg:block :bg-block">
                           <div className="mx-auto w-full flex flex- justify-around items-end md:flex-row md:items-center md:justify-start md:gap-x-5">
                               <div className="">
                                     <LogoNeu className="ml-5 mt-3 p-1 w-24 h-12 lg:w-40 lg:h-16"></LogoNeu>
@@ -36,10 +36,10 @@ export default function Infosection ()  {
 
 
                               </div>
-                              <Albers className="w-16 h-16"/>
-                              <h1 className='text-white text-lg'>Anmeldung zum Rettungsanker-Bloq</h1>
-                              <FontAwesomeIcon  className="text-amber-400 hover:text-red-600 p-0 mr-3 w-10 h-10 inline" icon={faCircleArrowRight}/>    
-                             <Link href="/rettungsankerChat"><a  className='border rounded-2xl text-[1.666rem] shadow-2xl shadow-slate-700 fond-black w-40 text-white bg-sky-800 hover:bg-amber-400 text-center'>Blog</a></Link> 
+                              <Albers className="w-36 h-20 lg:w-16 lg:h-16"/>
+                              <h1 className='text-white hidden lg:text-lg'>Anmeldung zum Rettungsanker-Bloq</h1>
+                                                         <Arrow className="-mt-4 w-60 h-20"></Arrow>
+                             <Link href="/rettungsankerChat"><a  className='mr-2 border rounded-2xl text-[1.666rem] shadow-2xl shadow-slate-700 fond-black w-60 text-white bg-sky-800 hover:bg-amber-400 text-center'>Blog</a></Link> 
                               </div>
                             </section>
                             </>

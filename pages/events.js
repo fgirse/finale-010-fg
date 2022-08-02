@@ -7,7 +7,7 @@ import { compose } from 'ol/transform'
 const events = () => {
   return (
   
-    <section className=" h-screen flex flex-col lg:items-stretch bg-slate-900 lg:justify-center bxorder-t-4 border-amber-400 lg:h-[130vh]">
+    <section className=" h-[125vh] flex flex-col lg:items-stretch bg-slate-900 lg:justify-center bxorder-t-4 border-amber-400 lg:h-[130vh]">
     <div className="relative flex-1">
     <Image
       layout="fill"

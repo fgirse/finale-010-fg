@@ -8,7 +8,7 @@ import Modale02 from '../components/Modale/Modal02'
 const kontakt = () => {
   return (
     <>
-     <section className=" mx-auto h-[133vh] w-full bg-slate-900/70 bg-[url('/west-side-story.png')] lg:bg-[length:100%_100%] lg:bg-no-repeat">
+     <section className=" mx-auto h-[200vh] w-full bg-slate-900/70 bg-cover bg-no-repeat bg-[url('/west-side-story.png')] lg:bg-cover lg:bg-no-repeat">
         <main className="flex w-full flex-col place-items-center justify-center">
           <div className="flex-1 flex-grow ">
             <div className="flex-1 mx-auto grid w-full grid-cols-1 items-stretch justify-center gap-y-10">
@@ -66,7 +66,7 @@ const kontakt = () => {
                 <h1 className="text-3xl text-orange-300 lg:text-xl">Linie 1 3 + 5</h1>
               </div>
 
-              <p className="bg-white/25 py-5 mt-36 rounded-xl  mx-auto w-9/12 text-justify text-sm text-gray-200 sm:text-lg md:max-w-md md:text-center lg:text-2xl">
+              <p className="bg-white/25 py-5 lg:mt-36 rounded-xl  mx-auto w-9/12 text-justify text-lg px-2 text-gray-200 sm:text-lg md:max-w-md md:text-center lg:text-2xl">
                 Sie finden uns entweder in der Kartenillustration der Freiburger Altstadt oder ganz
                 professionell in der Karte von OpenStreet-Map !
               </p>
