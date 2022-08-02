@@ -1,5 +1,5 @@
 import React from 'react'
-import LogoAlt from '../components/icons/svg/LogoAlt'
+import LogoAlt from '../components/icons/svg/logoAlt'
 import Image from 'next/image'
 import HeroeventAnimated from"../components/Animationen/HeroeventAnimated"
 import Modale04 from '../components/Modale/Modal04'

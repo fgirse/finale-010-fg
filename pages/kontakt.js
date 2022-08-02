@@ -1,7 +1,7 @@
 import React from 'react'
 import HerokontaktAnimated from '../components/Animationen/HerokontaktAnimated'
 import Image from 'next/image'
-import LogoAlt from '../components/icons/svg/LogoAlt'
+import LogoAlt from '/components/icons/svg/logoAlt'
 import Modale01 from '../components/Modale/Modal01'
 import Modale02 from '../components/Modale/Modal02'
 
