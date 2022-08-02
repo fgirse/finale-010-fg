@@ -25,7 +25,7 @@ const LayoutWrapper = ({ children }) => {
                   href={link.href}
                   className="p-1 font-bold uppercase text-slate-50 hover:text-amber-400 lg:text-[1.33rem] 2xl:text-[1.85rem] dark:text-gray-100 sm:p-4"
                 >
-                  <div className='lg:w-20 xl:w-24'>
+                  <div className='lg:w-20 xl:w-20'>
                   <Image className="hover:transform  hover:-translate hover:-translate-y-1 hover:scale-110" src="/Bulleye.svg" height="840" width="840" layout="responsive" alt="Illustration" />
                   </div>
                   {link.icon}

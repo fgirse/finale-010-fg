@@ -13,7 +13,7 @@ const HeroEventAnimated = () => {
   return (
     <h1 id="box"
       ref={HeroEventRef}
-      className="headingF text-3xl py-12 text-center lg:text-8xl uppercase text-amber-600 lg:text-[5.5rem]"
+      className="headingF text-6xl py-12 text-center lg:text-8xl uppercase text-amber-600 lg:text-[5.5rem]"
     >
       Dein Event
     </h1>
