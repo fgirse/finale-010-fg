@@ -7,19 +7,13 @@ const HeroDrinksAnimated = () => {
 
   useEffect(() => {
     console.log(HeroDrinksRef)
-    gsap.from(HeroDrinksRef.current, {
-      x: '400',
-      y: '200',
-      rotation: '+=360',
-      scale: '1',
-      duration: '2',
-    })
+    gsap.fromTo("#box", {autoAlpha: 0}, {autoAlpha: 1.0, duration: 5});
   }, [])
 
   return (
-    <h1
+    <h1 id="box"
       ref={HeroDrinksRef}
-      className="l headingC l py-12 text-center text-5xl uppercase text-amber-600 lg:text-[5.5rem]"
+      className="headingF text-6xl py-12 text-center lg:text-7xl uppercase lg:text-[5.5rem]"
     >
       Drinks & Snacks
     </h1>

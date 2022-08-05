@@ -5,7 +5,7 @@ import { useState} from 'react';
 import { faBeer, faBirthdayCake, faCircleArrowRight, faCircleQuestion, faHistory, faHome, faPeopleGroup, faVolleyball } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Albers from '../components/icons/svg/Albers'
-import Arrow from "../components/icons/svg/Arrow"
+import Arrow from "../public/Arrow-3-yellow.svg"
 
 export default function Infosection ()  {
  
@@ -22,7 +22,7 @@ export default function Infosection ()  {
                               </div>
 
                               <div className="hidden lg:flex lg:flex-row lg:justify-center lg:items-center gap-x-2">
-                                <svg className="w-6 h-6" fill="none" stroke="#fff200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                <svg className="w-6 h-6" fill="#ffcc00" stroke="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                                 <p className="font-sans font-bold text-gray-100 lg:text-sm xl:text-lg 2xl:text-xl ">0761 38386747</p>
                               </div>
 
@@ -37,8 +37,8 @@ export default function Infosection ()  {
 
                               </div>
                               <Albers className="w-36 h-20 lg:w-16 lg:h-16"/>
-                              <h1 className='text-white hidden lg:text-lg'>Anmeldung zum Rettungsanker-Bloq</h1>
-                                                         <Arrow className="-mt-4 w-60 h-20"></Arrow>
+                              <h1 className='text-white hidden lg:block lg:text-sm'>Anmeldung zum Rettungsanker-Bloq</h1>
+                                                         <Arrow fill=""className="-mt-4 w-60 h-20"></Arrow>
                              <Link href="/rettungsankerChat"><a  className='mr-2 border rounded-2xl text-[1.666rem] shadow-2xl shadow-slate-700 fond-black w-60 text-white bg-sky-800 hover:bg-amber-400 text-center'>Blog</a></Link> 
                               </div>
                             </section>

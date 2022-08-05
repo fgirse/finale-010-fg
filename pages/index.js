@@ -147,7 +147,7 @@ const Home = () => {
 
     <div
         className="mx-auto relative overflow-hidden rounded-lg w-11/12 bg-[url('/Hero-png)] bg-contain bg-no-repeat lg:bg-cover lg:bg-no-repeat p-12 text-center"
-        style={{ backgroundImage: "url('/Hero.png')", height: '66vh' }}
+        style={{ backgroundImage: "url('/Hero.png')", height: '100vh',width:"100vw"}}
     >
         <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed">
             {/* <div className="flex h-full items-center justify-center">
@@ -160,11 +160,11 @@ const Home = () => {
     </div>
 </section>
     {/*========================================================== SECTION INFO ==============================================================*/}
-    <section className="-mt-[48vh] lg:mt-0 bg-slate-900">
+    <section className="-mt-[86vh] lg:mt-0 bg-slate-900">
         <ThemeProvider theme={theme}>
             <div className="lg:items-center mx-auto -mt-1 grid grid-cols-1 items-center justify-center p-16 md:grid-cols-3 md:justify-around  md:p-6 lg:max-w-8xlg:w-11/12 lg:gap-x-5 xl:mt-[vh]">
                 <Card
-                    className="w-10/12 justify-self-center"
+                    className=" w-[90vw] justify-self-center lg:w-10/12"
                     mb={3}
                     mt={20}
                     sx={{
@@ -177,8 +177,8 @@ const Home = () => {
                     }}
                     onGotPointerCapture={2}
                 >
-                    <div className="border- mx-auto border-gray-100 p-4">
-                        <Image src="/LogoNeu.png" object-fit="cover" layout="responsive" height="260" width="250"></Image>
+                    <div className="w-full border- mx-auto border-gray-100 p-4 w-full ">
+                        <Image src="/LogoNeu.png" object-fit="cover" layout="responsive" height="260" width="250" alt="Illustration"></Image>
                     </div>
                     <Text>
                         <p className="text mt-10 text-center text-2xl font-bold uppercase">Kiezkneipe</p>
@@ -192,7 +192,7 @@ const Home = () => {
                 </Card>
 
                 <Card
-                    className="justify-self-center"
+                    className=" w-[90vw] justify-self-center lg:w-10/12"
                     mb={3}
                     mt={20}
                     sx={{
@@ -207,8 +207,9 @@ const Home = () => {
                 >
 
 
-                    <div className="w-10/12 border- object-contain mx-auto border-gray-100 p-4">
-                        <Image src="/Zeichnung-1.svg" layout="responsive" height="610" width="610" alt="fussball"></Image>
+                    <div className="w-full border- object-contain mx-auto border-gray-100 p-4">
+                        <Image src="/Zeichnung-1.svg
+                        " layout="responsive" height="610" width="610" alt="fussball"></Image>
 
 
                     </div>
@@ -222,7 +223,7 @@ const Home = () => {
                     </Text>
                 </Card>
                 <Card
-                    className="w-10/12 justify-self-center"
+                    className=" w-[90vw] justify-self-center lg:w-10/12"
                     mb={3}
                     mt={20}
                     sx={{
