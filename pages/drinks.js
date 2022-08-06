@@ -8,7 +8,7 @@ import MenuItem  from '../components/Menuitem/MenuItem.jsx';
 import SubHeading from "../components/SubHeading/SubHeading";
 import { data } from '../constants';
 import { images } from '../constants'
-import LogoAlt from "../components/icons/svg/LogoAlt"
+import LogoAlt from "../components/social-icons"
 import HeroDrinksAnimated from "@/components/Animationen/HeroDrinksAnimated";
 
 

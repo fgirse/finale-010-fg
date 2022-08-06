@@ -56,13 +56,11 @@ input:-webkit-autofill:focus {
   font-style: normal;
   font-weight: 400;
   src: local(''),
-    url('../public/fonts/architects-daughter-v17-latin-regular.eot?#iefix')
-      format('embedded-opentype'),
-    url('../public/fonts/architects-daughter-v17-latin-regular.woff2') format('woff2'),
-    url('../public/fonts/architects-daughter-v17-latin-regular.woff') format('woff'),
-    url('../public/fonts/architects-daughter-v17-latin-regular.ttf') format('truetype'),
-    url('../public/fonts/architects-daughter-v17-latin-regular.svg#ArchitectsDaughter')
-      format('svg');
+    url('../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.eot')format('embedded-opentype'),
+    url('../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.woff2') format('woff2'),
+    url('../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.woff') format('woff'),
+    url('../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.ttf') format('truetype'),
+    url('../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.svg') format('svg');
 }
 
 /* bowlby-one-sc - latin */
@@ -71,8 +69,9 @@ input:-webkit-autofill:focus {
   font-style: normal;
   font-weight: 400;
   src: local(''),
-    url('../public/fonts/bowlby_one_sc_regular_400-webfont.woff2') format('woff2'),
-    url('../public/fonts/bowlby_one_sc_regular_400-webfont.woff') format('woff'),
+    url('../public/fonts/BowlbyOneSC/bowlby_one_sc_regular_400-webfont.woff2') format('woff2'),
+    url('../public/fonts/BowlbyOneSC/bowlby_one_sc_regular_400-webfont.woff') format('woff'),
+    url('../public/fonts/BowlbyOneSC/BowlbyOneSC-Regular.ttf') format('truetype'),
 }
 
 

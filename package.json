@@ -26,6 +26,7 @@
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.0",
     "autoprefixer": "10.4.5",
+    "axios": "^0.27.2",
     "bcryptjs": "^2.4.3",
     "esbuild": "^0.13.13",
     "feather-icons-react": "^0.5.0",
