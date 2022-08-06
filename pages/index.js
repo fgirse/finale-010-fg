@@ -10,6 +10,7 @@ import Ganter from '../components/icons/svg/Ganter'
 import Astra from '../components/icons/svg/Astra'
 import sketchy from 'theme-ui-sketchy-preset'
 import { ThemeProvider, Card, Text } from 'theme-ui'
+import tickerSCF from '../components/GetDataSCFreiburg';
 
 
 const theme = {
@@ -20,9 +21,13 @@ const Home = () => {
   return (
     <>
     <section className="mx-auto flex w-full flex-col">
+    
           
-    <div className="bg-top-right mx-auto h-[100vh] w-full bg-slate-900/70 bg-[url('/collage02.png')] bg-[length:100%_77%] bg-no-repeat lg:h-screen lg:w-full lg:bg-slate-900 lg:bg-[url('/Test03.png')] lg:bg-[length:100%_75%] lg:bg-no-repeat">
+    <div className="bg-top-right mx-auto h-[100vh] bg-slate-900/70 bg-[url('/collage02.png')] bg-[length:100%_77%] bg-no-repeat lg:h-screen lg:w-full lg:bg-slate-900 lg:bg-[url('/Test03.png')] lg:bg-[length:100%_75%] lg:bg-no-repeat">
         <Animation/>
+        <div className="bg red-500 z-50 relative w-[33vw] h-36 top-[1vw] left-[33vw]">
+                    <tickerSCF className="absolute left-50 w-full h-20"/>
+                         <h1 className="text-[3rem] text-white text-center font-mono">SC FREIBURG TICKER</h1>   
         
         
         
@@ -34,7 +39,7 @@ const Home = () => {
         
         
         
-        
+        </div>
         </div>
    
 </section>
@@ -177,7 +182,7 @@ const Home = () => {
                     }}
                     onGotPointerCapture={2}
                 >
-                    <div className="w-full border- mx-auto border-gray-100 p-4 w-full ">
+                    <div className=" border- mx-auto border-gray-100 p-4 w-full ">
                         <Image src="/LogoNeu.png" object-fit="cover" layout="responsive" height="260" width="250" alt="Illustration"></Image>
                     </div>
                     <Text>

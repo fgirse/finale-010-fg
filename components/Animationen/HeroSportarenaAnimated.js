@@ -16,7 +16,7 @@ const HeroSportarenaAnimated = () => {
     <h1
     id="#box"
       ref={HeroSportarenaRef}
-      className="l headingF l py-12 text-center text-5xl uppercase text-amber-600 lg:text-[5.5rem]"
+      className="headingF py-12 text-center text-[2.66rem] uppercase text-amber-600 lg:text-[5.5rem]"
     >
       Sportarena
     </h1>

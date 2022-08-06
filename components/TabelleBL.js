@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { data } from 'autoprefixer'
@@ -40,7 +39,7 @@ const Table = () => {
 
     return headerElement.map((key, index) => {
       return (
-        <th className=" text-xxs mx-5 lg:px-4 lg:text-xl" key={index}>
+        <th className=" text-[0.5rem] mx-5 lg:px-4 lg:text-xl" key={index}>
           {key.toUpperCase()}
         </th>
       )
@@ -66,7 +65,7 @@ const Table = () => {
         }) => {
           return (
             <tr
-              className="mb-auto bg-gray-800 text-xs text-gray-100 lg:text-xl lg:font-extrabold"
+              className="mb-auto bg-gray-800 text-[.66rem] text-gray-100 lg:text-xl lg:font-extrabold"
               key={position}
             >
               <td>{position}</td>
@@ -93,7 +92,7 @@ const Table = () => {
     <>
       {/*<h1 className="text-white" id='title'>React Table</h1>*/}
 
-      <table className="w-full" h-full id="tabelleBL">
+      <table className="w-[90vw] h-full" id="tabelleBL">
         <thead>
           <tr className="mr-1 bg-yellow-600 px-4 text-xl text-white">{renderHeader()}</tr>
         </thead>

@@ -65,11 +65,11 @@ export default class FetchDataUser extends React.Component {
               Spieltag
             </p>
 
-            <div className='text-white text-2.0rem[]'>
-                  SC FREIBURG
+            <div className='text-white text-center text-[1.33rem]'>
+                  SC FREIBURG Rang: {this.state.tabelle.currentMatchday} Tore
               </div>
 
-            <div className="container  mx-auto mt-5 mb-24 w-full border border-yellow-500 text-xs md:w-11/12 xl:w-10/12">
+            <div className="container  mx-3 mt-5 mb-2 border border-yellow-500 text-[.33rem] md:w-11/12 xl:w-10/12">
               <TabelleBL className="text-xs"></TabelleBL>
             </div>
           </div>
