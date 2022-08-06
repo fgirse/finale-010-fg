@@ -68,13 +68,13 @@ input:-webkit-autofill:focus {
   font-family: 'Bowlby One SC';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/BowlbyOneSC/-sc-v19-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../public/fonts/BowlbyOneSC/-sc-v19-latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
-       url('../fonts/BowlbyOneSC/-sc-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/BowlbyOneSC/-sc-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/BowlbyOneSC/-sc-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/BowlbyOneSC/-sc-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/BowlbyOneSC/-sc-v19-latin-regular.svg#BowlbyOneSC') format('svg'); /* Legacy iOS */
+       url('../public/fonts/BowlbyOneSC/-sc-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../public/fonts/BowlbyOneSC/-sc-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../public/fonts/BowlbyOneSC/-sc-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../public/fonts/BowlbyOneSC/-sc-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../public/fonts/BowlbyOneSC/-sc-v19-latin-regular.svg#BowlbyOneSC') format('svg'); /* Legacy iOS */
 }
 
 
