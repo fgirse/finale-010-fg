@@ -26,7 +26,7 @@ class MyDocument extends Document {
           
 
         </Head>
-        <body className="bg-slate-700 text-black antialiased dark:bg-gray-900 dark:text-white">
+        <body className="bg-slate-900 text-black antialiased dark:bg-gray-900 dark:text-white mx-auto  min-h-screen w-screen max-w-[97vw]">
           <Main />
           <NextScript />
         </body>

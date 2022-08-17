@@ -8,13 +8,14 @@ import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import Infosection from './Infosection'
 import Image from 'next/image'
+import StickyContact from '../components/StickyContact'
 
 const LayoutWrapper = ({ children }) => {
   return (
     <>
 
     <Infosection/>
-      <div className="w-full flex h-screen flex-col justify-between bg-slate-900">
+      <div className="w-[97vw] mx-autoo flex h-screen flex-col justify-between bg-slate-900">
         <header className="lg:mxx-auto lg:w-full lg:bg-[url('/Wood.svg')] lg:bg-no-repeat lg:bg-cover flex items-center justify-end gap-8 py-1">
          
           <div className="flex items-center text-base leading-2">
@@ -23,7 +24,7 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-bold uppercase text-slate-50 hover:text-amber-400 lg:text-[1.33rem] 2xl:text-[1.85rem] dark:text-gray-100 sm:p-4"
+                  className="p-1 font-bold uppercase text-slate-50 hover:text-amber-400 md:text-[0.66rem]                                                               lg:text-[.88rem] 2xl:text-[1.85rem] dark:text-gray-100 sm:p-4"
                 >
                   <div className='lg:w-20 xl:w-20'>
                   <Image className="hover:transform  hover:-translate hover:-translate-y-1 hover:scale-110" src="/Bulleye.svg" height="840" width="840" layout="responsive" alt="Illustration" />
@@ -38,6 +39,7 @@ const LayoutWrapper = ({ children }) => {
           </div>
         </header>
         <main className="mb-auto">{children}</main>
+        <StickyContact/>
         <Footer />
       </div>
    

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { data } from 'autoprefixer'
@@ -39,7 +40,7 @@ const Table = () => {
 
     return headerElement.map((key, index) => {
       return (
-        <th className=" text-[0.5rem] mx-5 lg:px-4 lg:text-xl" key={index}>
+        <th className="mx-auto text-[0.5rem]  lg: 2xl:text-[1.66rem]" key={index}>
           {key.toUpperCase()}
         </th>
       )

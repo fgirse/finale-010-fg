@@ -39,7 +39,7 @@ export default class FetchDataUser extends React.Component {
 
     return (
       <>
-        <container className=" mx-auto flex w-full flex-col justify-between">
+        <container className="mx-auto flex w-full flex-col justify-between">
           <div
             style={{ 'background-image': "url('/sportarena.jpg')" }}
             className="mb-5 h-[120vh] w-full flex-1 border border-yellow-400 bg-cover  bg-no-repeat"
@@ -65,12 +65,9 @@ export default class FetchDataUser extends React.Component {
               Spieltag
             </p>
 
-            <div className='text-white text-center text-[1.33rem]'>
-                  SC FREIBURG Rang: {this.state.tabelle.currentMatchday} Tore
-              </div>
-
-            <div className="container  mx-3 mt-5 mb-2 border border-yellow-500 text-[.33rem] md:w-11/12 xl:w-10/12">
-              <TabelleBL className="text-xs"></TabelleBL>
+         
+            <div className="mt-5 mb-5 mx-auto border-2 w-[90vw]  text-[.rem] ">
+              <TabelleBL className="mx-auto "></TabelleBL>
             </div>
           </div>
 

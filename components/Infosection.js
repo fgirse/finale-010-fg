@@ -15,7 +15,7 @@ export default function Infosection ()  {
                       return(
 
                       <>
-                      <section className=" bg-slate-900 overflow-hidden sticky -top-0 z-50 h-20 w-[100vw] mx-auto md:hidden lg:bg-amber-800 lg:block :bg-block">
+                      <section className=" bg-slate-900 overflow-hidden sticky -top-0 z-50 h-20 w-[97vw] mx-auto md:hidden lg:bg-amber-800 lg:block :bg-block">
                           <div className="mx-auto w-full flex flex- justify-around items-end md:flex-row md:items-center md:justify-start md:gap-x-5">
                               <div className="">
                                     <LogoNeu className="ml-5 mt-3 p-1 w-24 h-12 lg:w-40 lg:h-16"></LogoNeu>

@@ -80,9 +80,8 @@ input:-webkit-autofill:focus {
 
 
 
-body {
-  background-color: #ffcc00;
-}
+let developers = team.filter(member => member.position == "developer")
+
 
 .headingA {
   -webkit-text-stroke-width: 1px;

@@ -10,7 +10,7 @@ import Ganter from '../components/icons/svg/Ganter'
 import Astra from '../components/icons/svg/Astra'
 import sketchy from 'theme-ui-sketchy-preset'
 import { ThemeProvider, Card, Text } from 'theme-ui'
-import tickerSCF from '../components/GetDataSCFreiburg';
+import ScFreiburg from "../components/GetScf"
 
 
 const theme = {
@@ -20,38 +20,25 @@ const theme = {
 const Home = () => {
   return (
     <>
-    <section className="mx-auto flex w-full flex-col">
+    <section className="mx-auto flex w-full flex-col mt-6">
     
           
-    <div className="bg-top-right mx-auto h-[100vh] bg-slate-900/70 bg-[url('/collage02.png')] bg-[length:100%_77%] bg-no-repeat lg:h-screen lg:w-full lg:bg-slate-900 lg:bg-[url('/Test03.png')] lg:bg-[length:100%_75%] lg:bg-no-repeat">
+    <div className="bg-top-right mx-auto h-[100vh] w-[95vw] bg-slate-900/70 bg-[url('/collage02.png')] bg-[length:96%_76.66%] bg-no-repeat sm:py-4 sm:bg-[length:100%,50%] lg:w-full lg:bg-slate-900 lg:bg-[url('/Test03.png')] lg:bg-[length:100%_75%] lg:bg-no-repeat">
+        
         <Animation/>
-        <div className="bg red-500 z-50 relative w-[33vw] h-36 top-[1vw] left-[33vw]">
-                    <tickerSCF className="absolute left-50 w-full h-20"/>
-                         <h1 className="text-[3rem] text-white text-center font-mono">SC FREIBURG TICKER</h1>   
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        <ScFreiburg className="text-center text-white text-2xl"/>
         </div>
-        </div>
-   
+
 </section>
 
 {/*======================================================================= SECTION ÖFFNUNGSZEITEN BEGRÜSSUG ===========================================================*/}
-<section className=" mx-auto -mt-[26vh] w-full bg-slate-900 lg:mt-[12vh] 2xl:mt-5">
+<section className=" mx-auto sm:-mt-[18vh] w-full bg-slate-900 lg:mt-[12vh] 2xl:mt-5">
     {/*======================================================================= FLEXBOX ===========================================================*/}
     
-
-    <div className=" h-min-  mx-auto flex w-11/12 flex-col items-center justify-center lg:-mt-[12vh] lg:flex-row lg:items-start lg:justify-start lg:gap-20 xl:-mt-60">
+  
+    <div className=" h-min-screen  mx-auto flex w-11/12 flex-col items-center justify-center lg:-mt-[12vh] lg:flex-row lg:items-start lg:justify-start lg:gap-20 xl:-mt-60">
    
-        <div className=" roundfulled-3xl bg-blue-900/10 lg:w-full">
+        <div className="mb-5 border rounded-3xl bg-blue-900/10 lg:w-full">
             <div className="flex flex-col items-center justify-start">
                 <p className="py-6 px-12 text-center text-4xl font-bold uppercase tracking-tight text-yellow-500 dark:text-white md:text-4xl xl:text-5xl">
                     öffnungzeiten
@@ -63,7 +50,7 @@ const Home = () => {
                 <p className="sm:text-1xl text-xl text-gray-300  md:text-base lg:text-xl xl:text-center">
                     Freitag und Samstag: 15 bis 03 Uhr
                 </p>
-                <p className="sm:text-1xl xl:text- text-center text-xl   text-gray-300 md:text-base lg:text-xl">
+                <p className="mb-3 sm:text-1xl xl:text- text-center text-xl   text-gray-300 md:text-base lg:text-xl">
                     Sonntag: Ruhetag
                 </p>
             </div>
@@ -150,23 +137,10 @@ const Home = () => {
         Die Kneipe
     </h1>
 
-    <div
-        className="mx-auto relative overflow-hidden rounded-lg w-11/12 bg-[url('/Hero-png)] bg-contain bg-no-repeat lg:bg-cover lg:bg-no-repeat p-12 text-center"
-        style={{ backgroundImage: "url('/Hero.png')", height: '100vh',width:"100vw"}}
-    >
-        <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed">
-            {/* <div className="flex h-full items-center justify-center">
-   <div className="text-white">
-     <h2 className="mb-4 text-4xl font-semibold">Heading</h2>
-     <h4 className="mb-6 text-xl font-semibold">Subheading</h4>
-   </div>
-</div>*/}
-        </div>
-    </div>
 </section>
     {/*========================================================== SECTION INFO ==============================================================*/}
-    <section className="-mt-[86vh] lg:mt-0 bg-slate-900">
-        <ThemeProvider theme={theme}>
+    <section className="-mt-[6vh] lg:mt-0 bg-slate-900">
+        <ThemeProvider theme={theme}>                                                                                                                                                                                                
             <div className="lg:items-center mx-auto -mt-1 grid grid-cols-1 items-center justify-center p-16 md:grid-cols-3 md:justify-around  md:p-6 lg:max-w-8xlg:w-11/12 lg:gap-x-5 xl:mt-[vh]">
                 <Card
                     className=" w-[90vw] justify-self-center lg:w-10/12"
@@ -213,8 +187,7 @@ const Home = () => {
 
 
                     <div className="w-full border- object-contain mx-auto border-gray-100 p-4">
-                        <Image src="/Zeichnung-1.svg
-                        " layout="responsive" height="610" width="610" alt="fussball"></Image>
+                        <Image src="/Zeichnung-1.svg" layout="responsive" height="610" width="610" alt="fussball"></Image>
 
 
                     </div>
