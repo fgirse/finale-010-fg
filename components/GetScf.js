@@ -8,8 +8,6 @@ import SCFLogo from'../public/ScFreiburg'
 import { faTableTennisPaddleBall } from '@fortawesome/free-solid-svg-icons'
 import  useSWR from "swr";
 import LiveTicker from '../components/LiveTicker'
-import { faSoccerBall, faVolleyball} from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Marquee from "react-fast-marquee";
 
 
@@ -39,8 +37,6 @@ const GetSCF = () => {
       setTabelleBL((response.data.standings[0].table));
 
       
-      
-   
     }
     const Emblem = tabelleBL.filter(Tabelle => (Tabelle.team.name === "SC Freiburg")).map(data => data.team.crestUrl);
     const Rang =  tabelleBL.filter(Tabelle => (Tabelle.team.name === "SC Freiburg")).map(data => data.position);

@@ -12,7 +12,7 @@ import Modale11 from './Modale/Modal11'
 export default function Footer() {
   return (
     <>
-    <footer className="relative bg-gray-800 pt-8 pb-6">
+    <footer className="relative mx-auto w-[97vw] bg-gray-800 pt-8 pb-6">
     <div
     className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
     style={{ height: "10px" }}>
@@ -55,9 +55,9 @@ export default function Footer() {
   {/*====================================================== ENDE ===================================*/}
 
   <div className=" before:container mx-auto px-4">
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap gap-x-10 ">
       <div className="w-full lg:w-4/12 px-4">
-        <h4 className="text-yellow-300 text-3xl font-semibold">
+        <h4 className="text-yellow-300 text-4xl font-semibold">
             unsere Partner
         </h4>
         <h5 className="text-lg mt-0 mb-2 text-gray-50">
@@ -100,8 +100,8 @@ export default function Footer() {
 
             </ul>
           </div>
-          <div className="w-full lg:w-4/12 px-4">
-            <span className="block uppercase text-gray-400 text-sm font-semibold mb-2">
+          <div className="mt-5 w-full lg:w-4/12 px-4">
+            <span className="block uppercase text-gray-400 text-[1.33rem] font-semibold mb-2">
               Impressum/ Datenschutz
             </span>
             <ul className="list-unstyled">

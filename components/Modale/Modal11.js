@@ -23,7 +23,7 @@ import Logo from '../icons/svg/LogoNeu'
         <button
           type="button"
           onClick={openModal}
-          className="text-sm font-extrabold text-left text-gray-200 hover:text-gray-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          className=" text-[1.2rem] py-2 font-extrabold lg:text-[2.66rem] text-left text-gray-200 hover:text-gray-400 focus:outline-none focus-visible:ring-2 focus-visible:rin lg-white lg-text[1.5rem]"
         >
           Impressum
         </button>
@@ -55,16 +55,16 @@ import Logo from '../icons/svg/LogoNeu'
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="border-gray-500 lg:p-24 w-full max-w-5xl transform overflow-hidden rounded-2xl border bg-slate-900 text-left align-middle shadow-xl transition-all">
-                  <Dialog.Title as="h3" className="lg:text-4xl headingB text-center font-medium leading-6 text-slate-500">
+                  <Dialog.Title as="h3" className="py-2 text-1xl headingB text-center font-medium leading-6 text-slate-500 lg:text-3xl">
                     Impressum
   </Dialog.Title>
                  
                   <section className="items-between flex flex-col justify-end gray-900 lg:mt-1 xl:py-2">
                 <div className="flex flex-col items-center justify-start  mx-auto mt-8 md:mt-20 md:w-6/12 lg:mx-auto lg:">
-                    <Logo className="bg-red-900 p-4 h-48 w-48 lg:h-96 lg:w-[33vw]"></Logo>
+                    <Logo className="bg-red-900 p-4 h-48 w-40 lg:h-96 lg:w-[33vw]"></Logo>
                 </div>
                 <div>
-                    <h1 className="mx-auto headingB lg:headingA text-center text-[3rem] text-white lg:text-[6rem] lg:text-gray-600">
+                    <h1 className="mx-auto headingB lg:headingA text-center text-[2rem] text-white lg:text-[6rem] lg:text-gray-600">
                         Impressum
                     </h1>
                     <div>
@@ -112,10 +112,10 @@ import Logo from '../icons/svg/LogoNeu'
                 
                 
 
-                  <div className="mt-0">
+                  <div className="p-5">
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-green-100 px-4 py-2 text-sm font-medium text-cyan-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      className="border inline-flex justify-center rounded-md border-white bg-green-100 px-4 py-2 text-sm font-medium text-cyan-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 lg-py-1 lg:text-[2.5rem]"
                       onClick={closeModal}
                     >
                       zurück
