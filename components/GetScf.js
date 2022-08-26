@@ -50,7 +50,7 @@ const GetSCF = () => {
   return (
 
   <>
-        <div className='hidden lg:block lg:py-1 lg:px-3 rounded-2xl lg:fixed lg:top-[26vh] lg:left-[12vw] font-black lg:w-4/12 lg:bg-red-900 border font-mono text-center text-white lg:text-[1.0rem]'>
+        <div className='hidden lg:block lg:py-1 lg:px-3 rounded-2xl lg:fixed lg:top-[38vh] lg:left-[12vw] xl:top-[31vh] font-black lg:w-4/12 lg:bg-yellow-700 border font-mono text-center text-white lg:text-[1.0rem]'>
      <Marquee speed={120} loop={3}>
     
         <SCFLogo className="ml-5 mr-5  w-12 h-12 bg-white"/>

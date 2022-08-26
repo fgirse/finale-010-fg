@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {  useState, useEffect } from 'react'
 import Modale03 from '../components/Modale/Modal03'
 import Animation from '../components/Animationen/HeroTimeline'
 import Link from '../components/Link'
@@ -11,13 +11,39 @@ import Astra from '../components/icons/svg/Astra'
 import sketchy from 'theme-ui-sketchy-preset'
 import { ThemeProvider, Card, Text } from 'theme-ui'
 import ScFreiburg from "../components/GetScf"
-
+import Script from 'next/script'
 
 const theme = {
   ...sketchy,
 }
 
 const Home = () => {
+
+   
+  const [isVisible, setIsVisible] = useState(true);
+  const [height, setHeight] = useState(0)
+  
+  useEffect(() => {   
+    window.addEventListener("scroll", listenToScroll);
+    return () => 
+       window.removeEventListener("scroll", listenToScroll); 
+  }, [])
+
+  const listenToScroll = () => {
+    let heightToHideFrom = 200;
+    const winScroll = document.body.scrollTop || 
+        document.documentElement.scrollTop;
+    setHeight(winScroll);
+
+    if (winScroll > heightToHideFrom) {  
+         isVisible && setIsVisible(false);
+    } else {
+         setIsVisible(true);
+    }  
+  };
+
+       
+
   return (
     <>
     <section className="mx-auto flex w-full flex-col mt-6">
@@ -26,17 +52,27 @@ const Home = () => {
     <div className="bg-top-right mx-auto h-[100vh] w-[95vw] bg-slate-900/70 bg-[url('/collage02.png')] bg-[length:96%_76.66%] bg-no-repeat sm:py-4 sm:bg-[length:100%,50%] lg:w-full lg:bg-slate-900 lg:bg-[url('/Test03.png')] lg:bg-[length:100%_75%] lg:bg-no-repeat">
         
         <Animation/>
-        <ScFreiburg className="text-center text-white text-2xl"/>
-        </div>
+        
+       {
+          isVisible 
+           && 
+         
+               <ScFreiburg id="hide" className="text-center text-white text-2xl"/>
+         
+        }
+     </div>
+    
+       
+        
 
 </section>
 
 {/*======================================================================= SECTION ÖFFNUNGSZEITEN BEGRÜSSUG ===========================================================*/}
-<section className=" mx-auto sm:-mt-[18vh] w-full bg-slate-900 lg:mt-[12vh] 2xl:mt-5">
+<section className=" mx-auto sm:-mt-[18vh] w-full bg-slate-900 lg:mt-[16vh] xl:mt-5">
     {/*======================================================================= FLEXBOX ===========================================================*/}
     
   
-    <div className=" h-min-screen  mx-auto flex w-11/12 flex-col items-center justify-center lg:-mt-[12vh] lg:flex-row lg:items-start lg:justify-start lg:gap-20 xl:-mt-60">
+    <div className=" h-min-screen  mx-auto flex w-11/12 flex-col items-center justify-center lg:-mt-[12vh] lg:flex-row lg:items-start lg:justify-start lg:gap-20 ">
    
         <div className="mb-5 border rounded-3xl bg-blue-900/10 lg:w-full">
             <div className="flex flex-col items-center justify-start">
@@ -136,7 +172,9 @@ const Home = () => {
     <h1 className="headingF text-center text-7xl text-yellow-600 lg:-mt-[58vh] lg:text-[12rem]">
         Die Kneipe
     </h1>
-
+<div className='w-full '>
+    <Image src="/Hero.png" width="2400" height="1200" layout='responsive' alt='illusration'/>
+</div>
 </section>
     {/*========================================================== SECTION INFO ==============================================================*/}
     <section className="-mt-[6vh] lg:mt-0 bg-slate-900">
@@ -352,6 +390,9 @@ const Home = () => {
 {/*======================================= SECTION IMPRESSUM ENDE =======================================================================*/}
 </>
   )
+
 }
+
+
 
 export default Home

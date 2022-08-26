@@ -1,20 +1,16 @@
 import React from 'react'
+import Image from 'next/image'
+import ReactDOM from 'react-dom';
+import $ from 'jquery'
+import Timeliner from '../components/Timeliner'
 
-const Geschichte = () => {
+
+export default function  geschichte() {
+
+	
+		
+
   return (
-    <>
-    <section className="mx-auto flex w-full flex-col">
-    
-          
-    <div className="bg-top-right mx-auto h-[100vh] bg-slate-900/70 bg-[url('/albers.png')] bg-[length:100%_77%] bg-no-repeat lg:h-screen lg:w-full lg:bg-slate-900 lg:bg-[url('/albers.png')] lg:bg-cover lg:bg-no-repeat">
-        
-        </div>
-
-</section>
-    
-    </>
-    
+<Timeliner/>
   )
-}
-
-export default Geschichte
+  }

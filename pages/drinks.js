@@ -15,14 +15,14 @@ import HeroDrinksAnimated from "@/components/Animationen/HeroDrinksAnimated";
 const Drinks = () => {
   return (
     <>
-        <section className="h-[266vh] border-t-4 border-amber-500 bg-black w-full mx-auto"> 
+        <section className="h-[266vh] border-t-4 border-amber-500 bg-black w-full mx-auto lg:h-[312vh]"> 
      <SubHeading titel="Retttungsanker Menu"/>
      <div className="w-7/12 flex flex-col items-center mx-auto">
       <HeroDrinksAnimated/>
-     {/*<h1 className="text-6xl headingB text-white-500 text-center lg:text-[5.33em]">Drinks {"&"} Snacks</h1>*/}
+  
      <h1 className="p-3 checked:w-11/12 text-center lg:w-4/12 max-auto text-[.9rem] text-slate-400">Preise gelten wie ausgeschrieben incl. 7% Mwst.</h1>
     
-          <LogoAlt className="lg:block lg:w-full"/>
+         
      </div>
      <div className="-mt-12 mx-auto w-48 lg:">
             <Image src="/astraglas.png" width="202" height="202"  layout="responsive" alt="menu__img" />
@@ -44,7 +44,7 @@ const Drinks = () => {
        </div>
      <div className="bg-black flex w-full h-full justify-center items-center pr-1 pl-1 md:w-[25vw] gap-x-2 md:mb-0">
      <div className="hidden lg:block w-10/12 lg:open:checked:h-full lg:transform lg:translate-y-1 xl:">
-            <Image src="/astraglas.png" width="202" height="202"  layout="responsive" alt="menu__img" />
+            <Image src="/Astraglas.png" width="202" height="202"  layout="responsive" alt="menu__img" />
           </div>
        </div>
      <div className="-mt-36 bg-black flex w-full h-full justify-center items-center pr-4 pl-4 md:w-[25vw] gap-x-2 md:mb-0 lg:mt-0">

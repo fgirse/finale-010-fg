@@ -1,11 +1,18 @@
 // webpack.config.js
 module.exports = {
+    
     /*
     rest of config...
     */
+    target: 'node',
 
     externals: {
-        // Use external version of React
         react: "react"
     },
+    node: {
+        fs: 'empty',
+        net: 'empty',
+        tls: 'empty'
+      }
+      
 };

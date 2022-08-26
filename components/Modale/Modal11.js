@@ -23,7 +23,7 @@ import Logo from '../icons/svg/LogoNeu'
         <button
           type="button"
           onClick={openModal}
-          className=" text-[1.2rem] py-2 font-extrabold lg:text-[2.66rem] text-left text-gray-200 hover:text-gray-400 focus:outline-none focus-visible:ring-2 focus-visible:rin lg-white lg-text[1.5rem]"
+          className=" text-[1.0rem] py-2 font-extrabold lg:text-[1.1rem] text-left text-gray-200 hover:text-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:rin lg-white lg-text[1.5rem]"
         >
           Impressum
         </button>
@@ -69,9 +69,7 @@ import Logo from '../icons/svg/LogoNeu'
                     </h1>
                     <div>
                         <div className="mt-8 flex flex-col items-center justify-between">
-                            <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3eewe4xl">
-                                gemäß § 6 Teledienstegesetz (TDG){' '}
-                            </h1>
+                           
                             <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">
                                 Inhaltlich Verantwortlicher gemäß § 6 MDStV: Michael Schreck
                             </h1>

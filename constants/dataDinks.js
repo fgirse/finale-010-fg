@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable import/no-anonymous-default-export */
 /* eslint-disable prettier/prettier */
-import images from './images';
+import images from'next/image';
 
 const biereA = [
   {

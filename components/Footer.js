@@ -6,7 +6,7 @@ import Astra from './icons/svg/Astra'
 import LogoLeckerladen from './icons/svg/LogoLeckerladen'
 import Flensburger from './icons/svg/Flensburger'
 import Modale11 from './Modale/Modal11' 
-
+import  ScrollTop from './ScrollTopAndComment'
 
 
 export default function Footer() {
@@ -23,7 +23,7 @@ export default function Footer() {
   <section className="relative pb-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <div className="py-24 md:py-36">
-            <div className="w-24">
+            <div className="w-24 lg:w-36 xl:w-48">
             <Image src="/Albers-white.png" height="170" width="170" layout="responsive" alt="Illustration Albers"/>
             </div>
             
@@ -55,6 +55,7 @@ export default function Footer() {
   {/*====================================================== ENDE ===================================*/}
 
   <div className=" before:container mx-auto px-4">
+    <ScrollTop/>
     <div className="flex flex-wrap gap-x-10 ">
       <div className="w-full lg:w-4/12 px-4">
         <h4 className="text-yellow-300 text-4xl font-semibold">
@@ -73,7 +74,7 @@ export default function Footer() {
       <div className="w-full lg:w-8/12 px-4">
         <div className="flex flex-wrap items-top mb-6">
           <div className="w-full lg:w-4/12 px-4 ml-auto">
-            <span className="block uppercase text-gray-400 text-sm font-semibold mb-2">
+          <span className="block uppercase text-gray-400  font-semibold mb-2 text-[1.0rem]">
               Links
             </span>
             <ul className="list-unstyled">
@@ -101,7 +102,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="mt-5 w-full lg:w-4/12 px-4">
-            <span className="block uppercase text-gray-400 text-[1.33rem] font-semibold mb-2">
+            <span className="block uppercase text-gray-400  font-semibold mb-2 text-[1.0rem]">
               Impressum/ Datenschutz
             </span>
             <ul className="list-unstyled">
@@ -110,6 +111,11 @@ export default function Footer() {
               <li>
                 <a className="text-gray-50 hover:text-gray-400 font-semibold block pb-2 text-sm"
                   href="https://creative-tim.com/privacy">Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-50 hover:text-gray-400 font-semibold block pb-2 text-sm"
+                  href="https://creative-tim.com/privacy">Sonstiges
                 </a>
               </li>
               <li>
