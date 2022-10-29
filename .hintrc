@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "meta-viewport": "off",
+    "disown-opener": "off",
+    "axe/name-role-value": "off",
+    "no-inline-styles": [
+      "warning",
+      {
+        "requireNoStyleElement": false
+      }
+    ],
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id": "off"
+      }
+    ]
+  }
+}

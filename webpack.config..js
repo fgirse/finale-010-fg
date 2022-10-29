@@ -1,18 +1,33 @@
 // webpack.config.js
 module.exports = {
-    
-    /*
+  /*
     rest of config...
     */
-    target: 'node',
+  target: 'node',
 
-    externals: {
-        react: "react"
-    },
-    node: {
-        fs: 'empty',
-        net: 'empty',
-        tls: 'empty'
-      }
-      
-};
+  externals: {
+    react: 'react',
+  },
+  node: {
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty',
+  },
+}
+
+// webpack.config.js
+module.exports = {
+  /*
+    rest of config...
+    */
+  target: 'node',
+
+  externals: {
+    react: 'react',
+  },
+  node: {
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty',
+  },
+}

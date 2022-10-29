@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import * as React from "react"
+import * as React from 'react'
 
 const SvgComponent = (props) => (
   <svg
@@ -52,9 +52,9 @@ const SvgComponent = (props) => (
     <ellipse
       style={{
         opacity: 1,
-        fill: "teal",
+        fill: 'teal',
         fillOpacity: 0.770419,
-        stroke: "#e3dbdb",
+        stroke: '#e3dbdb',
         strokeWidth: 0.71109,
       }}
       cx={166.275}

@@ -25,7 +25,6 @@ export default class FetchDataUser extends React.Component {
     const data = await response.json()
     console.log(data.season)
     this.setState({ tabelle: data.season, loading: false })
-    
   }
 
   render() {
@@ -65,8 +64,7 @@ export default class FetchDataUser extends React.Component {
               Spieltag
             </p>
 
-         
-            <div className="mt-5 mb-5 mx-auto border-2 w-[90vw]  text-[.rem] ">
+            <div className="mx-auto mt-5 mb-5 w-[90vw] border-2  text-[.rem] ">
               <TabelleBL className="mx-auto "></TabelleBL>
             </div>
           </div>

@@ -7,16 +7,15 @@ const HeroTeamAnimated = () => {
 
   useEffect(() => {
     console.log(HeroTeamRef)
-   
-    gsap.fromTo("#box", {autoAlpha: 0}, {autoAlpha: 1.0, duration: 5});
-  }, [])
 
+    gsap.fromTo('#box', { autoAlpha: 0 }, { autoAlpha: 1.0, duration: 5 })
+  }, [])
 
   return (
     <h1
       id="box"
       ref={HeroTeamRef}
-      className="headingF py-12 text-center text-6xl uppercase text-amber-600 lg:text-[5.5rem] xl:text-9xl"
+      className="headingF py-12 text-center text-5xl uppercase text-amber-600 lg:text-[4.5rem] xl:text-7xl"
     >
       das Team
     </h1>

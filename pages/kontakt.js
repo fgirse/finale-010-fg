@@ -8,10 +8,10 @@ import Modale02 from '../components/Modale/Modal02'
 const kontakt = () => {
   return (
     <>
-     <section className=" mx-auto h-[200vh] w-full bg-slate-900/70 bg-cover bg-no-repeat bg-[url('/west-side-story.png')] lg:bg-cover lg:bg-no-repeat">
+      <section className=" mx-auto h-[200vh] w-full bg-slate-900/70 bg-[url('/west-side-story.png')] bg-cover bg-no-repeat lg:bg-cover lg:bg-no-repeat">
         <main className="flex w-full flex-col place-items-center justify-center">
           <div className="flex-1 flex-grow ">
-            <div className="flex-1 mx-auto grid w-full grid-cols-1 items-stretch justify-center gap-y-10">
+            <div className="mx-auto grid w-full flex-1 grid-cols-1 items-stretch justify-center gap-y-10">
               <HerokontaktAnimated />
               <div className="-mt-20 flex w-full flex-col items-center justify-center lg:w-11/12">
                 <LogoAlt />
@@ -51,7 +51,7 @@ const kontakt = () => {
                 </div>
               </div>
 
-              <div className="mx-auto flex w-11/12 lg:w-full flex-col items-center justify-around border border-white  bg-slate-900 p-4 shadow-xl shadow-gray-500/70 lg:gap-x-2 lg:flex lg:flex-row lg:justify-evenly">
+              <div className="mx-auto flex w-11/12 flex-col items-center justify-around border border-white bg-slate-900  p-4 shadow-xl shadow-gray-500/70 lg:flex lg:w-full lg:flex-row lg:justify-evenly lg:gap-x-2">
                 <div className="mb-2 h-20 w-60 rounded-2xl bg-gray-300/10 py-4 px-2 lg:w-80 xl:w-80">
                   <Image
                     src="/VAG_Freiburg.png"
@@ -61,12 +61,14 @@ const kontakt = () => {
                     width="400"
                   />
                 </div>
-                <h1 className="text-3xl text-orange-400 md:text-2xl lg:text-3xl ">&nbsp; Haltestelle: &nbsp;</h1>
+                <h1 className="text-3xl text-orange-400 md:text-2xl lg:text-3xl ">
+                  &nbsp; Haltestelle: &nbsp;
+                </h1>
                 <h1 className="text-5xl text-orange-300 lg:text-2xl">Holzmarkt &nbsp;</h1>
                 <h1 className="text-3xl text-orange-300 lg:text-xl">Linie 1 3 + 5</h1>
               </div>
 
-              <p className="bg-white/25 py-5 lg:mt-36 rounded-xl  mx-auto w-9/12 text-justify text-lg px-2 text-gray-200 sm:text-lg md:max-w-md md:text-center lg:text-2xl">
+              <p className="mx-auto w-9/12 rounded-xl bg-white/25  py-5 px-2 text-justify text-lg text-gray-200 sm:text-lg md:max-w-md md:text-center lg:mt-36 lg:text-2xl">
                 Sie finden uns entweder in der Kartenillustration der Freiburger Altstadt oder ganz
                 professionell in der Karte von OpenStreet-Map !
               </p>
@@ -79,16 +81,10 @@ const kontakt = () => {
                   <Modale02></Modale02>
                 </div>
               </div>
-              
             </div>
           </div>
         </main>
       </section>
-
-
-    
-    
-    
     </>
   )
 }

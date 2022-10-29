@@ -27,11 +27,10 @@ function App() {
   }, [])
 
   return (
-    <section                                                           >
-    <div style={{ height: '266px', width: '100%' }} ref={mapElement} className="map-container" />
+    <section>
+      <div style={{ height: '266px', width: '100%' }} ref={mapElement} className="map-container" />
     </section>
   )
-
 }
 
 export default App

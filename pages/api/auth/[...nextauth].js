@@ -1,20 +1,17 @@
-import NextAuth from 'next-auth';
-import CredentialsProvider from 'next-auth/providers/credentials';
-import { MongoDBAdapter } from "@next-auth/mongodb-adapter"
-import clientPromise from "../auth/lib/mongodb";
-import EmailProvider from "next-auth/providers/email";
-import GoogleProvider from "next-auth/providers/google";
-import TwitterProvider from "next-auth/providers/twitter";
-import GitHubProvider from "next-auth/providers/github";
-import FacebookProvider from "next-auth/providers/facebook"
-import Auth0Provider from "next-auth/providers/auth0"
-
-
+import NextAuth from 'next-auth'
+import CredentialsProvider from 'next-auth/providers/credentials'
+import { MongoDBAdapter } from '@next-auth/mongodb-adapter'
+import clientPromise from '../auth/lib/mongodb'
+import EmailProvider from 'next-auth/providers/email'
+import GoogleProvider from 'next-auth/providers/google'
+import TwitterProvider from 'next-auth/providers/twitter'
+import GitHubProvider from 'next-auth/providers/github'
+import FacebookProvider from 'next-auth/providers/facebook'
+import Auth0Provider from 'next-auth/providers/auth0'
 
 export default NextAuth({
-
   adapter: MongoDBAdapter(clientPromise),
- 
+
   providers: [
     CredentialsProvider({
       id: 'credentials',
@@ -40,7 +37,7 @@ export default NextAuth({
         const payload = {
           email: credentials.email,
           password: credentials.password,
-        };
+        }
 
         const res = await fetch('http://localhost:5000/api/tokens', {
           method: 'POST',
@@ -50,79 +47,68 @@ export default NextAuth({
             tenant: credentials.tenantKey,
             'Accept-Language': 'en-US',
           },
-        });
+        })
 
-        const user = await res.json();
+        const user = await res.json()
         if (!res.ok) {
-          throw new Error(user.exception);
+          throw new Error(user.exception)
         }
         // If no error and we have user data, return it
         if (res.ok && user) {
-          return user;
+          return user
         }
 
         // Return null if user data could not be retrieved
-        return null;
+        return null
       },
     }),
 
-
     EmailProvider({
       server: {
-          host: process.env.EMAIL_SERVER_HOST,
-          port: process.env.EMAIL_SERVER_PORT,
-          auth: {
+        host: process.env.EMAIL_SERVER_HOST,
+        port: process.env.EMAIL_SERVER_PORT,
+        auth: {
           user: process.env.EMAIL_SERVER_USER,
           pass: process.env.EMAIL_SERVER_PASSWORD,
-          }
+        },
       },
       from: process.env.EMAIL_FROM,
-      }),
-  
-      FacebookProvider({
-        clientId: process.env.FACEBOOK_ID,
-        clientSecret: process.env.FACEBOOK_SECRET,
-      }),
-  
-      GitHubProvider({
-        clientId: process.env.GITHUB_ID,
-        clientSecret: process.env.GITHUB_SECRET,
-      }),
-      GoogleProvider({
-        clientId: process.env.GOOGLE_ID,
-        clientSecret: process.env.GOOGLE_SECRET,
-      }),
-      TwitterProvider({
-        clientId: process.env.TWITTER_ID,
-        clientSecret: process.env.TWITTER_SECRET,
-      }),
-      Auth0Provider({
-        clientId: process.env.AUTH0_ID,
-        clientSecret: process.env.AUTH0_SECRET,
-        issuer: process.env.AUTH0_ISSUER,
-      }),
+    }),
 
+    FacebookProvider({
+      clientId: process.env.FACEBOOK_ID,
+      clientSecret: process.env.FACEBOOK_SECRET,
+    }),
 
-
-
-
+    GitHubProvider({
+      clientId: process.env.GITHUB_ID,
+      clientSecret: process.env.GITHUB_SECRET,
+    }),
+    GoogleProvider({
+      clientId: process.env.GOOGLE_ID,
+      clientSecret: process.env.GOOGLE_SECRET,
+    }),
+    TwitterProvider({
+      clientId: process.env.TWITTER_ID,
+      clientSecret: process.env.TWITTER_SECRET,
+    }),
+    Auth0Provider({
+      clientId: process.env.AUTH0_ID,
+      clientSecret: process.env.AUTH0_SECRET,
+      issuer: process.env.AUTH0_ISSUER,
+    }),
 
     // ...add more providers here
   ],
 
-
   secret: process.env.JWT_SECRET,
 
+  // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
-
-  
   theme: {
     colorScheme: 'dark', // "auto" | "dark" | "light"
     brandColor: '#ffee00', // Hex color code #33FF5D
     logo: '/LogoAlt.png', // Absolute URL to image
-    buttonText: '#ffcc00'
+    buttonText: '#ffcc00',
   },
-
-});
+})

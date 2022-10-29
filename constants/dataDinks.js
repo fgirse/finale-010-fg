@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable import/no-anonymous-default-export */
 /* eslint-disable prettier/prettier */
-import images from'next/image';
+import images from 'next/image'
 
 const biereA = [
   {
@@ -19,8 +19,7 @@ const biereA = [
     price: '3.90 Euro',
     tags: 'Flasche | 33cl',
   },
- 
-];
+]
 
 const biereB = [
   {
@@ -36,11 +35,9 @@ const biereB = [
   {
     title: 'Ganter Radler',
     price: '4.20 Euro',
-    tags: 'Fass | 50 cl'
+    tags: 'Fass | 50 cl',
   },
-
- 
-];
+]
 
 const weineA = [
   {
@@ -58,16 +55,13 @@ const weineA = [
     price: '6.90 Euro',
     tags: 'Scherzingen-| Batzenberg | Weingut Heienmann | 2dl',
   },
-  
+
   {
     title: 'Spätburgunder Barrique',
     price: '6.90 Euro',
     tags: 'Scherzingen-| Batzenberg | Weingut Heienmann | 2dl',
   },
-  
-
-
-];
+]
 
 const weineB = [
   {
@@ -89,16 +83,10 @@ const weineB = [
     title: 'Grauburgunder trocken',
     price: '6.90 Euro',
     tags: 'Scherzingen | Batzenberg | Weingut Heienmann | 2dl',
-  }
-
-
-];
-
-
-
+  },
+]
 
 const cocktailsA = [
-
   {
     title: 'Aperol Sprtiz',
     price: '6.90 Euro',
@@ -124,18 +112,16 @@ const cocktailsA = [
     price: '$26',
     tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
   },
-
-];
+]
 
 const cocktailsB = [
-
   {
     title: 'Aperol Sprtiz',
     price: '6.90 Euro',
     tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
   },
   {
-    title: "Martini Bianco",
+    title: 'Martini Bianco',
     price: '6.60 Euro',
     tags: 'Dark rum | Ginger beer | Slice of lime',
   },
@@ -154,13 +140,10 @@ const cocktailsB = [
     price: '$26',
     tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
   },
+]
 
-];
-
-;                                                                                                                                                                                                                       
 const awards = [
   {
-  
     subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
   },
   {
@@ -178,6 +161,6 @@ const awards = [
     title: 'Outstanding Chef',
     subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
   },
-];
+]
 
-export default { biereA, biereB, weineA, weineB,cocktailsA, cocktailsB, awards };
+export default { biereA, biereB, weineA, weineB, cocktailsA, cocktailsB, awards }

@@ -26,7 +26,7 @@ export default function Modal02() {
         <button
           type="button"
           onClick={openModal}
-          className="text-2xl fo cus-visible:ring-opacity-75 rounded-md bg-amber-700 bg-opacity-80 px-4 py-2 font-medium text-white hover:bg-opacity-60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          className="fo cus-visible:ring-opacity-75 rounded-md bg-amber-700 bg-opacity-80 px-4 py-2 text-2xl font-medium text-white hover:bg-opacity-60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
         >
           Tisch Reservation
         </button>
@@ -62,35 +62,38 @@ export default function Modal02() {
                     TISCH RESERVATION
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className='text-slate-50'>Buche eine Tischreservation online! Du erhälst dann eine e-mail zur Bestätigung. Am Tag der Reservation erfolgt ein Remindinding über sms an die von Dir angegebene Telefonnummer. Danke für die Reservation</p> <br/> <p className='text-slate-50'>Team Rettungsanker</p> 
-                  
-                  </div>  
+                    <p className="text-slate-50">
+                      Buche eine Tischreservation online! Du erhälst dann eine e-mail zur
+                      Bestätigung. Am Tag der Reservation erfolgt ein Remindinding über sms an die
+                      von Dir angegebene Telefonnummer. Danke für die Reservation
+                    </p>{' '}
+                    <br /> <p className="text-slate-50">Team Rettungsanker</p>
+                  </div>
                   {/*<Script async src='https://app.tablein.com/sites/all/modules/custom/cumo_widget/js/code_outside_iframe.js?v2' type='text/javascript'></Script>*/}
-        
-                  <Script async
-	                        src="//book.timify.com/widget/widget.min.js"
-                          id="timify-widget"
-                          data-position="flexible"
-                          data-locale="de-de">
-                  </Script>
-                
-    
-                              
-                {/*<Iframe src='https://app.tablein.com/widget?restaurant_id=10788157&show-info=1' className='mt-5 mb-3 w-11/12 h-96'>
+
+                  <Script
+                    async
+                    src="//book.timify.com/widget/widget.min.js"
+                    id="timify-widget"
+                    data-position="flexible"
+                    data-locale="de-de"
+                  ></Script>
+
+                  {/*<Iframe src='https://app.tablein.com/widget?restaurant_id=10788157&show-info=1' className='mt-5 mb-3 w-11/12 h-96'>
 
                           </Iframe>*/}
 
-                {/*<Iframe src='https://book.timify.com?accountId=62a8653b6249513136086cf4&fullscreen=1&hideCloseButton=1&showGuestBookingForm=1&locale=de-de' className='mt-5 mb-3 w-11/12 h-96'>
+                  {/*<Iframe src='https://book.timify.com?accountId=62a8653b6249513136086cf4&fullscreen=1&hideCloseButton=1&showGuestBookingForm=1&locale=de-de' className='mt-5 mb-3 w-11/12 h-96'>
 
                         </Iframe>*/}
 
-<div
-	className="timify-button mx-auto text-center text-xl text-slate-50 bg-lime-700 hover:bg-lime-500 py-2 rounded-2xl w-3/12 cursor-pointer"
-	data-account-id="62a8653b6249513136086cf4"
-	data-show-guest-booking-form="true"
->Termin online buchen</div>
-                
-                
+                  <div
+                    className="timify-button mx-auto w-3/12 cursor-pointer rounded-2xl bg-lime-700 py-2 text-center text-xl text-slate-50 hover:bg-lime-500"
+                    data-account-id="62a8653b6249513136086cf4"
+                    data-show-guest-booking-form="true"
+                  >
+                    Termin online buchen
+                  </div>
 
                   <div className="mt-0">
                     <button
@@ -101,10 +104,7 @@ export default function Modal02() {
                       zurück
                     </button>
                   </div>
-          
-                           
-                
-                             </Dialog.Panel>
+                </Dialog.Panel>
               </Transition.Child>
             </div>
           </div>

@@ -21,7 +21,7 @@ export default function Modal02() {
         <button
           type="button"
           onClick={openModal}
-          className="border text-[2.0rem] focus-visible:ring-opacity-75 rounded-md bg-green-700 bg-opacity-80 px-4 py-2 font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2focus-visible:ring-white"
+          className="focus-visible:ring-2focus-visible:ring-white rounded-md border bg-green-700 bg-opacity-80 px-4 py-2 text-[2.0rem] font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-opacity-75"
         >
           OPENSTREET MAP
         </button>
@@ -38,7 +38,7 @@ export default function Modal02() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0  bg-slate-700/96" />
+            <Dialog.Overlay className="bg-slate-700/96 fixed  inset-0" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
@@ -52,12 +52,12 @@ export default function Modal02() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-              <Dialog.Panel className="border-gray-100-500 w-[66vw] max-w-md lg:h-[66vh] transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="border-gray-100-500 w-[66vw] max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all lg:h-[66vh]">
                   <Dialog.Title as="h3" className="text-3xl font-medium leading-6 text-amber-500">
                     OPENSTREET MAP
                   </Dialog.Title>
                   <div className="mt-2">
-                    <div className=" mx-auto mt-12 mb-12 w-80 max-w-lg- items-center border border-gray-50 bg-slate-900 px-5 py-4 text-center shadow-2xl shadow-gray-400 lg:w-96 lg:max-w-xl">
+                    <div className=" max-w-lg- mx-auto mt-12 mb-12 w-80 items-center border border-gray-50 bg-slate-900 px-5 py-4 text-center shadow-2xl shadow-gray-400 lg:w-96 lg:max-w-xl">
                       <Map />
                       <h1 className="mt-2 mb-2 text-center text-xs text-gray-100">
                         Illustration Altstadt Freiburg{' '}

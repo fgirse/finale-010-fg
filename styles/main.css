@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-800;
+  @apply text-gray-50;
+  @apply font-sans;
+}
+
+.wrapper {
+  width: 70vw;
+  height: 66vh;
+  background-color: green;
+  margin: auto;
+  margin-top: 3vh;
+}
+
+.headingF {
+  -webkit-text-stroke-width: 5.9px;
+  -webkit-text-stroke-color: #fffffc;
+  font-family: 'Bowlby One SC';
+  font-weight: extrabold;
+}
+
+.newspaperA {
+  columns: 133px 2;
+  color: white;
+  font-family: 'Architects Daughter';
+}
+
+.newspaper {
+  columns: 166px 2;
+  column-gap: 6rem;
+  line-height: 0.66rem;
+  color: white;
+  font-family: 'Architects Daughter';
+  column-rule: thin inset orange;
+}
+
+.newspaperC {
+  columns: 66px 3;
+  column-gap: 6rem;
+  line-height: 0.66rem;
+  color: white;
+  font-family: 'Architects Daughter';
+  column-rule: thin inset orange;
+}
+.newspaperD {
+  columns: 66px 1;
+  column-gap: 6rem;
+  line-height: 0.66rem;
+  color: white;
+  font-family: 'Architects Daughter';
+  column-rule: thin inset orange;
+}
+
+

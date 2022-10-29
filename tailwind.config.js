@@ -22,11 +22,10 @@ module.exports = {
     extend: {
       screen: {
         small: '',
-        medium:'',
+        medium: '',
         xl: '',
-        xxl: ''
+        xxl: '',
       },
-
 
       spacing: {
         '9/16': '56.25%',
@@ -180,9 +179,9 @@ module.exports = {
   plugins: [
     // Other plugins
     require('tailwindcss-animatecss')({
-          classes: ['animate__animated', 'animate__fadeIn', 'animate__bounceIn', ],
-          settings: {},
-          variants: [],
-        }),
-      ]
-     }
+      classes: ['animate__animated', 'animate__fadeIn', 'animate__bounceIn'],
+      settings: {},
+      variants: [],
+    }),
+  ],
+}

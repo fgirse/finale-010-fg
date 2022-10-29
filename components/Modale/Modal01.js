@@ -20,7 +20,7 @@ export default function Modal01() {
         <button
           type="button"
           onClick={openModal}
-          className="border w-96 rounded-md bg-orange-500 bg-opacity-80 px-4 py-2 text-[2.0rem] font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+          className="w-96 rounded-md border bg-orange-500 bg-opacity-80 px-4 py-2 text-[2.0rem] font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
         >
           Karte Alstadt
         </button>

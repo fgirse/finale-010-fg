@@ -4,7 +4,6 @@
 
 @tailwind utilities;
 
-
 .task-list-item::before {
   @apply hidden;
 }
@@ -14,7 +13,7 @@
 }
 
 .footnotes {
-  @apply pt-8 mt-12 border-t border-gray-200 dark:border-gray-700;
+  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
 }
 
 .csl-entry {
@@ -26,7 +25,6 @@ input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
-
 
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
@@ -57,21 +55,14 @@ input:-webkit-autofill:focus {
   font-family: 'Bowlby One SC';
   font-style: normal;
   font-weight: 400;
-  src: url('../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
-    url('../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.eot?#iefix')
+    url('../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.eot')
       format('embedded-opentype'),
-    /* IE6-IE8 */ url('../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.woff2')
-      format('woff2'),
-    /* Super Modern Browsers */
-      url('../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.woff') format('woff'),
-    /* Modern Browsers */ url('../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.ttf')
-      format('truetype'),
-    /* Safari, Android, iOS */
-      url('../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.svg#BowlbyOneSC')
-      format('svg'); /* Legacy iOS */
+    url('../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.woff2') format('woff2'),
+    url('../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.woff') format('woff'),
+    url('../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.ttf') format('truetype'),
+    url('../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.svg') format('svg');
 }
-
 let developers = team.filter(member => member.position == 'developer') .headingA {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #ffffff;
@@ -143,33 +134,4 @@ let developers = team.filter(member => member.position == 'developer') .headingA
   column-rule: thin inset orange;
 }
 
-/* At last you have to copy these css styles from here ,Create a CSS file and paste it and import the file */
-
-/* Also you can customize these css styles*/
-
-/* In my case, I use these CSS styles in my App.css file*/
-
-.shape-lighthouse {
-  float: left;
-  shape-outside: url('/Lighthouse4.png');
-  height: 140px;
-  width: 150px;
-  transform: translateX(-2rem);
-}
-
-.shape-albers {
-  float: left;
-  shape-outside: url('/Albers-white.png');
-  height: 160px;
-  width: 150px;
-  transform: translateX(-2rem);
-}
-
-.shape-astraballon {
-  float: left;
-  shape-outside: url('/Astraballons.png');
-  height: 160px;
-  width: 150px;
-  transform: translateX(-2rem);
-}
 

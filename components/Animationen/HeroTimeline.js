@@ -30,7 +30,7 @@ const HeroTimeline = () => {
         duration: 2,
       })
 
-        .to(q('#Overlay'), {
+      .to(q('#Overlay'), {
         autoAlpha: 0,
         duration: 1,
       })
@@ -50,45 +50,41 @@ const HeroTimeline = () => {
   }, [])
 
   return (
-    <div 
+    <div
       ref={el}
       id="Overlay"
-      className="relative lg:justify-center hidden  mt-24 lg:flex lg:w-full lg:flex-col lg:items-center "
-      
+      className="relative mt-24 hidden  lg:flex lg:w-full lg:flex-col lg:items-center lg:justify-center "
     >
+      <div
+        className="h- left-30 absolute top-10 w-9/12 rounded-2xl border bg-gray-900/50"
+        id="Overlay"
+      >
+        <div className="lg:mx-auto lg:mt-8 lg:w-6/12 lg:p-4 ">
+          <Image
+            id="LogoAlt"
+            src="/Logoalt.png"
+            width="160"
+            height="24"
+            layout="responsive"
+            alt="Logoalt"
+          />
+        </div>
 
-      <div className='rounded-2xl border border-8 bg-gray-900/50 h- absolute top-10 left-30 w-9/12' id="Overlay">
-
-      <div className="lg:mx-auto lg:p-4 lg:mt-8 lg:w-6/12 ">
-        <Image
-          id="LogoAlt"
-          src="/Logoalt.png"
-          width="160"
-          height="24"
-          layout="responsive"
-          alt="Logoalt"
-        />
+        <h1
+          id="die"
+          className="font-['Bowlby One SC'] headingE -mt-12 p-4 text-center text-[8rem] uppercase text-white"
+        >
+          die
+        </h1>
+        <h1
+          id="kiez"
+          className="font-['Bowlby One SC'] headingF -mt-20 p-4 text-center text-[8rem] uppercase text-red-800"
+        >
+          kiezkneipe
+        </h1>
       </div>
-
-      <h1
-        id="die"
-        className="font-['Bowlby One SC'] headingE -mt-12 p-4 text-center text-[8rem] uppercase text-white"
-      >
-        die
-      </h1>
-      <h1
-        id="kiez"
-        className="font-['Bowlby One SC'] headingF -mt-20 p-4 text-center text-[8rem] uppercase text-red-800"
-      >
-        kiezkneipe
-      </h1>
     </div>
-
-
-
-
-      </div>
-        )
+  )
 }
 
 export default HeroTimeline

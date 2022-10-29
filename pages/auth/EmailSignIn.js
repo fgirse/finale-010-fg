@@ -1,4 +1,4 @@
-import { getCsrfToken } from "next-auth/react"
+import { getCsrfToken } from 'next-auth/react'
 
 export default function SignIn({ csrfToken }) {
   return (

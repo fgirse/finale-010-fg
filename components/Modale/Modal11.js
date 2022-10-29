@@ -1,4 +1,3 @@
-
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import Image from 'next/image'
@@ -6,7 +5,7 @@ import Script from 'next/script'
 import Iframe from 'react-iframe'
 import Logo from '../icons/svg/LogoNeu'
 
- function Modal11 ()  {
+function Modal11() {
   const [isOpen, setIsOpen] = useState(false)
 
   function closeModal() {
@@ -23,7 +22,7 @@ import Logo from '../icons/svg/LogoNeu'
         <button
           type="button"
           onClick={openModal}
-          className=" text-[1.0rem] py-2 font-extrabold lg:text-[1.1rem] text-left text-gray-200 hover:text-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:rin lg-white lg-text[1.5rem]"
+          className="text-lg focus-visible:ring-opacity-75 rounded-md px-4 py-2 font-medium text-white hover:text-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
         >
           Impressum
         </button>
@@ -54,75 +53,74 @@ import Logo from '../icons/svg/LogoNeu'
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="border-gray-500 lg:p-24 w-full max-w-5xl transform overflow-hidden rounded-2xl border bg-slate-900 text-left align-middle shadow-xl transition-all">
-                  <Dialog.Title as="h3" className="py-2 text-1xl headingB text-center font-medium leading-6 text-slate-500 lg:text-3xl">
+                <Dialog.Panel className="w-full max-w-5xl transform overflow-hidden rounded-2xl border border-gray-500 bg-slate-900 text-left align-middle shadow-xl transition-all lg:p-24">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-1xl headingB py-2 text-center font-medium leading-6 text-slate-500 lg:text-3xl"
+                  >
                     Impressum
-  </Dialog.Title>
-                 
-                  <section className="items-between flex flex-col justify-end gray-900 lg:mt-1 xl:py-2">
-                <div className="flex flex-col items-center justify-start  mx-auto mt-8 md:mt-20 md:w-6/12 lg:mx-auto lg:">
-                    <Logo className="bg-red-900 p-4 h-48 w-40 lg:h-96 lg:w-[33vw]"></Logo>
-                </div>
-                <div>
-                    <h1 className="mx-auto headingB lg:headingA text-center text-[2rem] text-white lg:text-[6rem] lg:text-gray-600">
-                        Impressum
-                    </h1>
-                    <div>
-                        <div className="mt-8 flex flex-col items-center justify-between">
-                           
-                            <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">
-                                Inhaltlich Verantwortlicher gemäß § 6 MDStV: Michael Schreck
-                            </h1>
-                            <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">
-                                Adelhauserstrasse 7c
-                            </h1>
-                            <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">
-                                D 79098 Freiburg / Breisgau
-                            </h1>
-                        </div>
+                  </Dialog.Title>
 
-                        <div className="mt-12">
-                            <h1 className="mx-auto mt-5 w-9/12 text-center font-mono text-yellow-400 md:text-2xl">
-                                Geschäftsführung:
-                            </h1>
-                            <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">
-                                Michael Schreck
-                            </h1>
-                        </div>
-
-                        <div className="mt-12">
-                            <h1 className="mx-auto mt-5 w-9/12 text-center font-mono text-yellow-400 md:text-2xl">
-                                Steuernummer:
-                            </h1>
-                            <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">1234567890</h1>
-                        </div>
-                        <div className="mt-12">
-                            <h1 className="mx-auto mt-5 w-9/12 text-center font-mono text-yellow-400 md:text-2xl">
-                                Gerichtsstand:
-                            </h1>
-                            <h1 className="mx-auto mb-10 w-9/12 text-center text-gray-100 md:text-3xl  lg:mb-9">
-                                Freiburg/ Breisgau
-                            </h1>
-                        </div>
+                  <section className="items-between gray-900 flex flex-col justify-end lg:mt-1 xl:py-2">
+                    <div className="lg: mx-auto mt-8 flex  flex-col items-center justify-start md:mt-20 md:w-6/12 lg:mx-auto">
+                      <Logo className="h-48 w-40 bg-red-900 p-4 lg:h-96 lg:w-[33vw]"></Logo>
                     </div>
-                </div>
-            </section>
-                
-                
+                    <div>
+                      <h1 className="headingB lg:headingA mx-auto text-center text-[2rem] text-white lg:text-[6rem] lg:text-gray-600">
+                        Impressum
+                      </h1>
+                      <div>
+                        <div className="mt-8 flex flex-col items-center justify-between">
+                          <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">
+                            Inhaltlich Verantwortlicher gemäß § 6 MDStV: Michael Schreck
+                          </h1>
+                          <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">
+                            Adelhauserstrasse 7c
+                          </h1>
+                          <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">
+                            D 79098 Freiburg / Breisgau
+                          </h1>
+                        </div>
+
+                        <div className="mt-12">
+                          <h1 className="mx-auto mt-5 w-9/12 text-center font-mono text-yellow-400 md:text-2xl">
+                            Geschäftsführung:
+                          </h1>
+                          <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">
+                            Michael Schreck
+                          </h1>
+                        </div>
+
+                        <div className="mt-12">
+                          <h1 className="mx-auto mt-5 w-9/12 text-center font-mono text-yellow-400 md:text-2xl">
+                            Steuernummer:
+                          </h1>
+                          <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">
+                            1234567890
+                          </h1>
+                        </div>
+                        <div className="mt-12">
+                          <h1 className="mx-auto mt-5 w-9/12 text-center font-mono text-yellow-400 md:text-2xl">
+                            Gerichtsstand:
+                          </h1>
+                          <h1 className="mx-auto mb-10 w-9/12 text-center text-gray-100 md:text-3xl  lg:mb-9">
+                            Freiburg/ Breisgau
+                          </h1>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
 
                   <div className="p-5">
                     <button
                       type="button"
-                      className="border inline-flex justify-center rounded-md border-white bg-green-100 px-4 py-2 text-sm font-medium text-cyan-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 lg-py-1 lg:text-[2.5rem]"
+                      className="lg-py-1 inline-flex justify-center rounded-md border border-white bg-green-100 px-4 py-2 text-sm font-medium text-cyan-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 lg:text-[2.5rem]"
                       onClick={closeModal}
                     >
                       zurück
                     </button>
                   </div>
-          
-                           
-                
-                             </Dialog.Panel>
+                </Dialog.Panel>
               </Transition.Child>
             </div>
           </div>

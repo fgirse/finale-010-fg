@@ -40,7 +40,7 @@ const Table = () => {
 
     return headerElement.map((key, index) => {
       return (
-        <th className="mx-auto text-[0.5rem]  lg: 2xl:text-[1.66rem]" key={index}>
+        <th className="lg: mx-auto  text-[0.5rem] 2xl:text-[1.66rem]" key={index}>
           {key.toUpperCase()}
         </th>
       )
@@ -93,7 +93,7 @@ const Table = () => {
     <>
       {/*<h1 className="text-white" id='title'>React Table</h1>*/}
 
-      <table className="w-[90vw] h-full" id="tabelleBL">
+      <table className="h-full w-[90vw]" id="tabelleBL">
         <thead>
           <tr className="mr-1 bg-yellow-600 px-4 text-xl text-white">{renderHeader()}</tr>
         </thead>

@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import Image from 'next/image'
@@ -8,9 +7,8 @@ const HerokontaktAnimated = () => {
 
   useEffect(() => {
     console.log(HerokontaktRef)
-    gsap.fromTo("#box", {autoAlpha: 0}, {autoAlpha: 1.0, duration: 5});
+    gsap.fromTo('#box', { autoAlpha: 0 }, { autoAlpha: 1.0, duration: 5 })
   }, [])
-   
 
   return (
     <h1
