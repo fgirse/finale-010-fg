@@ -17,7 +17,7 @@ module.exports = {
     './src/**/*.{html,js}',
     './node_modules/tw-elements/dist/js/**/*.js',
   ],
-  darkMode: 'class',
+  darkMode: 'className',
   theme: {
     extend: {
       screen: {
@@ -179,7 +179,7 @@ module.exports = {
   plugins: [
     // Other plugins
     require('tailwindcss-animatecss')({
-      classes: ['animate__animated', 'animate__fadeIn', 'animate__bounceIn'],
+      className: ['animate__animated', 'animate__fadeIn', 'animate__bounceIn'],
       settings: {},
       variants: [],
     }),

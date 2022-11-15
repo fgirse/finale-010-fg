@@ -4,8 +4,8 @@
 <svg
    width="1717"
    height="178"
-   clip-rule="evenodd"
-   fill-rule="evenodd"
+   clipRule="evenodd"
+   fillRule="evenodd"
    stroke-linecap="round"
    stroke-linejoin="round"
    version="1.1"

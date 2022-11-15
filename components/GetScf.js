@@ -59,44 +59,37 @@ const GetSCF = () => {
     .map((data) => data.points)
   return (
     <>
-      <div className="hidden rounded-2xl border text-center font-mono font-black text-white lg:fixed lg:top-[38vh] lg:left-[12vw] lg:block lg:w-5/12 lg:bg-yellow-700 lg:py-1 lg:px-3 lg:text-[1.0rem] xl:top-[31vh]">
+      <div className="hidden rounded-2xl border text-center font-mono font-black text-white lg:fixed lg:top-[28vh] lg:right-[33vw] 2xl:left-[56vw] lg:block lg:w-5/12 lg:bg-gray-700 lg:py-1 lg:px-3 lg:text-[1.33rem] 2xl:top-[28vh]">
         <Marquee speed={120} loop={3}>
           <SCFLogo className="ml-5 mr-5  h-12 w-12 bg-white" />
-          <div className="flex flex-row items-center justify-center gap-x-3">
-            <h1 className="ml-5">
+          <div className="flex flex-row items-center justify-center gap-x-5">
+            <p className="ml-5">
               {' '}
-              ++++++++++++++++++++++++++++++++++++++++++ SC FREIBURG TICKER
+              ++++++++++++++++++++++++++++++++++++++++++ SC FREIBURG LIVE TICKER
               ++++++++++++++++++++++++++++++++++++++{' '}
-            </h1>
+            </p>
 
             <img src={Emblem} height="32" width="36" alt="Eblem" />
             <img src={Emblem} height="32" width="36" alt="Eblem" />
             <img src={Emblem} height="32" width="36" alt="Eblem" />
-            <h1 className="ml-5"> BUNDESLIGA </h1>
-            <h1>
-              Spieltag: <span className="ml-1 text-amber-200">{Spieltag}</span>
-            </h1>
-            <h1>
-              Rang: <span className="ml-1 text-amber-200">{Rang}</span>
-            </h1>
-            <h1>
-              Torverhältnis:{' '}
+            <p className="ml-5"> BUNDESLIGA </p>
+            <svg className="w-8 h-8" stroke='#ffCC00' fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z" /></svg><p>Spieltag: <span className="ml-1 text-amber-200">{Spieltag}</span>
+            </p>
+            <svg className="w-8 h-8" stroke='#ffCC00' fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z" /></svg><p> Rang: <span className="ml-1 text-amber-200">{Rang}</span>
+            </p>
+            <svg className="w-8 h-8" stroke='#ffCC00' fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z" /></svg><p>Torverhältnis:{' '}
               <span className="ml-1 text-amber-200">
                 {ToreErzielt} : {ToreErhalten}
               </span>
-            </h1>
-            <h1 className="">
-              Siege:<span className="ml-1 text-amber-200">{Siege}</span>
-            </h1>
-            <h1 className="">
-              Niederlagen:<span className="ml-1 text-amber-200">{Niederlagen}</span>
-            </h1>
-            <h1 className="">
-              Unentschieden:<span className="ml-1 text-amber-200">{Remis}</span>
-            </h1>
-            <h1 className="">
-              Punkte:<span className="ml-1 text-amber-200">{Punkte}</span>
-            </h1>
+            </p>
+            <svg className="w-8 h-8" stroke='#ffCC00' fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z" /></svg><p className="">Siege:<span className="ml-1 text-amber-200">{Siege}</span>
+            </p>
+            <svg className="w-8 h-8" stroke='#ffCC00' fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z" /></svg><p className="">Niederlagen:<span className="ml-1 text-amber-200">{Niederlagen}</span>
+            </p>
+            <svg className="w-8 h-8" stroke='#ffCC00' fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z" /></svg><p className="">Unentschieden:<span className="ml-1 text-amber-200">{Remis}</span>
+            </p>
+            <svg className="w-8 h-8" stroke='#ffCC00' fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z" /></svg><p className="">Punkte:<span className="ml-1 text-amber-200">{Punkte}</span>
+            </p>
           </div>
         </Marquee>
       </div>

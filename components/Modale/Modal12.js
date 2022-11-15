@@ -18,11 +18,11 @@ function Modal12() {
 
   return (
     <>
-      <div className="inset-0 flex items-start justify-start">
+      <div className="text-slate-200 inset-0 flex items-start justify-start">
         <button
           type="button"
           onClick={openModal}
-          className="text-lg focus-visible:ring-opacity-75 rounded-md px-4 py-2 font-medium text-white hover:text-yellow-400 ty-60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          className="text-lg focus-visible:ring-opacity-75 rounded-md px-4 py-2 font-medium text-white hover:text-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
         >
           Datenschutz
         </button>
@@ -53,40 +53,34 @@ function Modal12() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-5xl transform overflow-hidden rounded-2xl border border-gray-500 bg-slate-900 text-left align-middle shadow-xl transition-all lg:p-24">
+                <Dialog.Panel className="w-full lg:max-w-8xl transform overflow-hidden rounded-2xl border border-gray-500 bg-slate-300 text-left align-middle shadow-xl transition-all lg:p-24">
                   <Dialog.Title
                     as="h3"
-                    className="text-1xl headingB py-2 text-center font-medium leading-6 text-slate-500 lg:text-3xl"
+                    className="text-xl headingF py-2 text-center font-medium leading-6 text-slate-700 lg:text-9xl"
                   >
                     Datenschutz
                   </Dialog.Title>
 
-                  <section className="items-between gray-900 flex flex-col justify-end lg:mt-1 xl:py-2">
-                    <div className="lg: mx-auto mt-8 flex  flex-col items-center justify-start md:mt-20 md:w-6/12 lg:mx-auto">
-                      <Logo className="h-24 w-24 bg-red-900 p-4 lg:h-96 lg:w-[12vw]"></Logo>
-                    </div>
-                    <div>
-                      <h1 className="headingB lg:headingA mx-auto text-center text-[2rem] text-white lg:text-[6rem] lg:text-gray-600">
-                        Datenschutz
-                      </h1>
-                      
+                  <section className="items-between text-gray-900 text-left text-sm p-4 flex flex-col justify-end lg:text-lg lg:text-justify lg:mt-1 xl:py-2">
+                    
+ 
+                  </section>
+
+                  <div className="p-5">
                     <button
                       type="button"
-                      className="lg-py-1 inline-flex justify-center rounded-md border border-white bg-green-100 px-4 py-2 text-sm font-medium text-cyan-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 lg:text-[2.0rem]"
+                      className="lg-py-1 inline-flex justify-center rounded-md border border-white bg-green-100 px-4 py-2 text-sm font-medium text-cyan-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 lg:text-[1.66rem]"
                       onClick={closeModal}
                     >
                       zurück
                     </button>
                   </div>
-                  </section>
                 </Dialog.Panel>
               </Transition.Child>
             </div>
           </div>
         </Dialog>
       </Transition>
-      
-    
     </>
   )
 }

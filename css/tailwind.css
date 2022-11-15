@@ -12,9 +12,7 @@
   @apply list-none;
 }
 
-.footnotes {
-  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
-}
+
 
 .csl-entry {
   @apply my-5;
@@ -102,6 +100,14 @@ let developers = team.filter(member => member.position == 'developer') .headingA
   font-weight: extrabold;
 }
 
+.shape-lighthouse {
+  shape-margin: 80px;
+  width: 30vw; 
+  height: 65vh;
+  float:left;
+  shape-outside: url('/lighthouse3.png');
+}
+
 .newspaperA {
   columns: 133px 2;
   color: white;
@@ -123,9 +129,6 @@ let developers = team.filter(member => member.position == 'developer') .headingA
   line-height: 0.66rem;
   color: white;
   font-family: 'Architects Daughter';
-  column-rule: thin inset orange;
-}
-.newspaperD {
   columns: 66px 1;
   column-gap: 6rem;
   line-height: 0.66rem;
@@ -134,4 +137,31 @@ let developers = team.filter(member => member.position == 'developer') .headingA
   column-rule: thin inset orange;
 }
 
+.portraitMick {
+ shape-outside: url('/portrait-Mick1.png');
+ float: left;
+ shape-image-threshold: .6;                                                                                                                                            
+}
 
+.shape-lighthouse {
+  shape-outside: url('/lighthouse3.png');
+  shape-image-threshold: .6;
+}
+
+BODY {
+  background: url('/lighthouse3.png');
+  background-position: 50% 50%;
+  background-size: 17em 17em;
+  background-blend-mode: multiply;
+}
+H1 {
+  font-size: 3.1em;
+  text-align: center;
+  text-shadow: 2px 2px 0 rgba(255,255,255,1),
+    3px 3px 0;
+  
+  }
+
+P {
+  margin: 1em 0;
+  }

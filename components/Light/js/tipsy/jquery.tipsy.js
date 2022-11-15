@@ -24,7 +24,7 @@
         var $tip = this.tip()
 
         $tip.find('.tipsy-inner')[this.options.html ? 'html' : 'text'](title)
-        $tip[0].className = 'tipsy' // reset classname in case of dynamic gravity
+        $tip[0].className = 'tipsy' // reset classNamename in case of dynamic gravity
         $tip
           .remove()
           .css({ top: 0, left: 0, visibility: 'hidden', display: 'block' })
@@ -121,8 +121,8 @@
 
     tip: function () {
       if (!this.$tip) {
-        this.$tip = $('<div class="tipsy"></div>').html(
-          '<div class="tipsy-arrow"></div><div class="tipsy-inner"/></div>'
+        this.$tip = $('<div className="tipsy"></div>').html(
+          '<div className="tipsy-arrow"></div><div className="tipsy-inner"/></div>'
         )
       }
       return this.$tip

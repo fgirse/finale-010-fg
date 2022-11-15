@@ -40,7 +40,7 @@ const Table = () => {
 
     return headerElement.map((key, index) => {
       return (
-        <th className="lg: mx-auto  text-[0.5rem] 2xl:text-[1.66rem]" key={index}>
+        <th className="conmx-auto  text-[0.5rem] xl:text-[1.2rem] 2xl:text-[1.66rem]" key={index}>
           {key.toUpperCase()}
         </th>
       )
@@ -70,10 +70,10 @@ const Table = () => {
               key={position}
             >
               <td>{position}</td>
-              <td>
+              <td className="">
                 <img src={team.crestUrl} height="18" width="18" alt="Eblem" />
               </td>{' '}
-              <td>{team.name}</td>
+              <td className='text-yellow-500 '>{team.name}</td>
               <td>{playedGames}</td>
               <td>{won}</td>
               <td>{lost}</td>
@@ -93,11 +93,11 @@ const Table = () => {
     <>
       {/*<h1 className="text-white" id='title'>React Table</h1>*/}
 
-      <table className="h-full w-[90vw]" id="tabelleBL">
+      <table className="h-full w-[100vw]" id="tabelleBL">
         <thead>
-          <tr className="mr-1 bg-yellow-600 px-4 text-xl text-white">{renderHeader()}</tr>
+          <tr className="mr-1 bg-yellow-600 px-1 text-lg text-white">{renderHeader()}</tr>
         </thead>
-        <tbody className="bg-gray-800 text-xl text-white opacity-80">{renderBody()}</tbody>
+        <tbody className="bg-gray-800 text-[.66rem] text-white opacity-80">{renderBody()}</tbody>
       </table>
     </>
   )

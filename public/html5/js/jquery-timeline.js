@@ -84,7 +84,7 @@
 
 
 			// CREATE PRELOAD DIV
-			wrapper.append('<div class="preload"></div>');
+			wrapper.append('<div className="preload"></div>');
 
 
 			// PRELOAD IMAGES BEFORE GOING AHEAD
@@ -171,7 +171,7 @@
 					if (options.audioPlayer) {
 
 						// CREATE AUDIO DIV
-						wrapper.append('<audio class="audio_player" src="'+ options.audioFilePath +'"></audio>');
+						wrapper.append('<audio className="audio_player" src="'+ options.audioFilePath +'"></audio>');
 
 						// START PLAYER
 						$('.audio_player').player({loop: options.audioLoop});

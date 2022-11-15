@@ -34,63 +34,63 @@
 			changepicturecallback: function(){}, /* Called everytime an item is shown/changed */
 			callback: function(){}, /* Called when prettyPhoto is closed */
 			ie6_fallback: true,
-			markup: '<div class="pp_pic_holder"> \
-						<div class="ppt">&nbsp;</div> \
-						<div class="pp_top"> \
-							<div class="pp_left"></div> \
-							<div class="pp_middle"></div> \
-							<div class="pp_right"></div> \
+			markup: '<div className="pp_pic_holder"> \
+						<div className="ppt">&nbsp;</div> \
+						<div className="pp_top"> \
+							<div className="pp_left"></div> \
+							<div className="pp_middle"></div> \
+							<div className="pp_right"></div> \
 						</div> \
-						<div class="pp_content_container"> \
-							<div class="pp_left"> \
-							<div class="pp_right"> \
-								<div class="pp_content"> \
-									<div class="pp_loaderIcon"></div> \
-									<div class="pp_fade"> \
-										<a href="#" class="pp_expand" title="Expand the image">Expand</a> \
-										<div class="pp_hoverContainer"> \
-											<a class="pp_next" href="#">next</a> \
-											<a class="pp_previous" href="#">previous</a> \
+						<div className="pp_content_container"> \
+							<div className="pp_left"> \
+							<div className="pp_right"> \
+								<div className="pp_content"> \
+									<div className="pp_loaderIcon"></div> \
+									<div className="pp_fade"> \
+										<a href="#" className="pp_expand" title="Expand the image">Expand</a> \
+										<div className="pp_hoverContainer"> \
+											<a className="pp_next" href="#">next</a> \
+											<a className="pp_previous" href="#">previous</a> \
 										</div> \
 										<div id="pp_full_res"></div> \
-										<div class="pp_details"> \
-											<div class="pp_nav"> \
-												<a href="#" class="pp_arrow_previous">Previous</a> \
-												<p class="currentTextHolder">0/0</p> \
-												<a href="#" class="pp_arrow_next">Next</a> \
+										<div className="pp_details"> \
+											<div className="pp_nav"> \
+												<a href="#" className="pp_arrow_previous">Previous</a> \
+												<p className="currentTextHolder">0/0</p> \
+												<a href="#" className="pp_arrow_next">Next</a> \
 											</div> \
-											<p class="pp_description"></p> \
-											<div class="pp_social">{pp_social}</div> \
-											<a class="pp_close" href="#">Close</a> \
+											<p className="pp_description"></p> \
+											<div className="pp_social">{pp_social}</div> \
+											<a className="pp_close" href="#">Close</a> \
 										</div> \
 									</div> \
 								</div> \
 							</div> \
 							</div> \
 						</div> \
-						<div class="pp_bottom"> \
-							<div class="pp_left"></div> \
-							<div class="pp_middle"></div> \
-							<div class="pp_right"></div> \
+						<div className="pp_bottom"> \
+							<div className="pp_left"></div> \
+							<div className="pp_middle"></div> \
+							<div className="pp_right"></div> \
 						</div> \
 					</div> \
-					<div class="pp_overlay"></div>',
-			gallery_markup: '<div class="pp_gallery"> \
-								<a href="#" class="pp_arrow_previous">Previous</a> \
+					<div className="pp_overlay"></div>',
+			gallery_markup: '<div className="pp_gallery"> \
+								<a href="#" className="pp_arrow_previous">Previous</a> \
 								<div> \
 									<ul> \
 										{gallery} \
 									</ul> \
 								</div> \
-								<a href="#" class="pp_arrow_next">Next</a> \
+								<a href="#" className="pp_arrow_next">Next</a> \
 							</div>',
 			image_markup: '<img id="fullResImage" src="{path}" />',
-			flash_markup: '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="{width}" height="{height}"><param name="wmode" value="{wmode}" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="{path}" /><embed src="{path}" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="{width}" height="{height}" wmode="{wmode}"></embed></object>',
-			quicktime_markup: '<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab" height="{height}" width="{width}"><param name="src" value="{path}"><param name="autoplay" value="{autoplay}"><param name="type" value="video/quicktime"><embed src="{path}" height="{height}" width="{width}" autoplay="{autoplay}" type="video/quicktime" pluginspage="http://www.apple.com/quicktime/download/"></embed></object>',
+			flash_markup: '<object classNameid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="{width}" height="{height}"><param name="wmode" value="{wmode}" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="{path}" /><embed src="{path}" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="{width}" height="{height}" wmode="{wmode}"></embed></object>',
+			quicktime_markup: '<object classNameid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab" height="{height}" width="{width}"><param name="src" value="{path}"><param name="autoplay" value="{autoplay}"><param name="type" value="video/quicktime"><embed src="{path}" height="{height}" width="{width}" autoplay="{autoplay}" type="video/quicktime" pluginspage="http://www.apple.com/quicktime/download/"></embed></object>',
 			iframe_markup: '<iframe src ="{path}" width="{width}" height="{height}" frameborder="no"></iframe>',
-			inline_markup: '<div class="pp_inline">{content}</div>',
+			inline_markup: '<div className="pp_inline">{content}</div>',
 			custom_markup: '',
-			social_tools: '<div class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div><div class="facebook"><iframe src="http://www.facebook.com/plugins/like.php?locale=en_US&href={location_href}&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:500px; height:23px;" allowTransparency="true"></iframe></div>' /* html or false to disable */
+			social_tools: '<div className="twitter"><a href="http://twitter.com/share" className="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div><div className="facebook"><iframe src="http://www.facebook.com/plugins/like.php?locale=en_US&href={location_href}&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:500px; height:23px;" allowTransparency="true"></iframe></div>' /* html or false to disable */
 		}, pp_settings);
 		
 		// Global variables accessible only by prettyPhoto
@@ -356,7 +356,7 @@
 				
 					case 'inline':
 						// to get the item height clone it, apply default width, wrap it in the prettyPhoto containers , then delete
-						myClone = $(pp_images[set_position]).clone().append('<br clear="all" />').css({'width':settings.default_width}).wrapInner('<div id="pp_full_res"><div class="pp_inline"></div></div>').appendTo($('body')).show();
+						myClone = $(pp_images[set_position]).clone().append('<br clear="all" />').css({'width':settings.default_width}).wrapInner('<div id="pp_full_res"><div className="pp_inline"></div></div>').appendTo($('body')).show();
 						doresize = false; // Make sure the dimensions are not resized.
 						pp_dimensions = _fitToViewport($(myClone).width(),$(myClone).height());
 						doresize = true; // Reset the dimensions
@@ -767,13 +767,13 @@
 				toInject = "";
 				for (var i=0; i < pp_images.length; i++) {
 					if(!pp_images[i].match(/\b(jpg|jpeg|png|gif)\b/gi)){
-						classname = 'default';
+						classNamename = 'default';
 						img_src = '';
 					}else{
-						classname = '';
+						classNamename = '';
 						img_src = pp_images[i];
 					}
-					toInject += "<li class='"+classname+"'><a href='#'><img src='" + img_src + "' width='50' alt='' /></a></li>";
+					toInject += "<li className='"+classNamename+"'><a href='#'><img src='" + img_src + "' width='50' alt='' /></a></li>";
 				};
 				
 				toInject = settings.gallery_markup.replace(/{gallery}/g,toInject);
@@ -817,14 +817,14 @@
 			
 			// Inject the play/pause if it's a slideshow
 			if(settings.slideshow){
-				$pp_pic_holder.find('.pp_nav').prepend('<a href="#" class="pp_play">Play</a>')
+				$pp_pic_holder.find('.pp_nav').prepend('<a href="#" className="pp_play">Play</a>')
 				$pp_pic_holder.find('.pp_nav .pp_play').click(function(){
 					$.prettyPhoto.startSlideshow();
 					return false;
 				});
 			}
 			
-			$pp_pic_holder.attr('class','pp_pic_holder ' + settings.theme); // Set the proper theme
+			$pp_pic_holder.attr('className','pp_pic_holder ' + settings.theme); // Set the proper theme
 			
 			$pp_overlay
 				.css({

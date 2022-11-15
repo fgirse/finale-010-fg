@@ -19,7 +19,7 @@ $(document).ready(function() {
 		timeoffset = 50,
 		hash = location.hash || null;
 		iDevice = navigator.userAgent.match(/iphone|ipod|ipad/i) || false,
-		badIE = $('html').prop('class').match(/ie(6|7|8)/)|| false;
+		badIE = $('html').prop('className').match(/ie(6|7|8)/)|| false;
 		
 	//if Cufon replace headings
 	if(typeof Cufon == 'function'){

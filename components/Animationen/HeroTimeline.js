@@ -56,10 +56,10 @@ const HeroTimeline = () => {
       className="relative mt-24 hidden  lg:flex lg:w-full lg:flex-col lg:items-center lg:justify-center "
     >
       <div
-        className="h- left-30 absolute top-10 w-9/12 rounded-2xl border bg-gray-900/50"
+        className="left-30 absolute lg:top-0 2xl:top-4 w-9/12 lg:h-[28vh] 2xl:h-[52vh] rounded-2xl border bg-gray-900/75"
         id="Overlay"
       >
-        <div className="lg:mx-auto lg:mt-8 lg:w-6/12 lg:p-4 ">
+        <div className="lg:mx-auto lg:mt-[3vh] lg:w-[27vw] lg:p-4 ">
           <Image
             id="LogoAlt"
             src="/Logoalt.png"
@@ -70,18 +70,18 @@ const HeroTimeline = () => {
           />
         </div>
 
-        <h1
+        <p
           id="die"
-          className="font-['Bowlby One SC'] headingE -mt-12 p-4 text-center text-[8rem] uppercase text-white"
+          className="font-['Bowlby One SC'] headingF -mt-6 p-1 text-center lg:text-[4rem] 2xl:text-[8rem] uppercase text-white"
         >
           die
-        </h1>
-        <h1
+        </p>
+        <p
           id="kiez"
-          className="font-['Bowlby One SC'] headingF -mt-20 p-4 text-center text-[8rem] uppercase text-red-800"
+          className="font-['Bowlby One SC'] headingF -mt-44 p-1 text-center lg:text-[4rem] 2xl:text-[8rem] uppercase text-red-800"
         >
           kiezkneipe
-        </h1>
+        </p>
       </div>
     </div>
   )

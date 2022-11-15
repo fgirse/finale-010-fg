@@ -14,7 +14,7 @@ const HeroEventAnimated = () => {
     <h1
       id="box"
       ref={HeroEventRef}
-      className="headingF py-12 text-center text-6xl uppercase text-amber-600 lg:text-8xl lg:text-[5.5rem]"
+      className="hidden lg:block headingF py-12 text-center text-6xl uppercase text-yellow-500 lg:text-[5rem]"
     >
       Dein Event
     </h1>

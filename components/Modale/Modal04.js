@@ -24,7 +24,7 @@ export default function Modal04() {
           onClick={openModal}
           className="fo cus-visible:ring-opacity-75 rounded-md bg-orange-500 bg-opacity-80 px-4 py-2 text-2xl font-medium text-white hover:bg-opacity-60 focus:outline-none focus-visible:ring-2                           focus-visible:ring-white"
         >
-          Information
+          weitere Information
         </button>
       </div>
 
@@ -35,7 +35,7 @@ export default function Modal04() {
             enter="ease-out duration-300"
             enterFrom="opacity-0"
             enterTo="opacity-100"
-            leave="ease-in duration-200"
+            leave="ease-in durion-200"
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
@@ -53,36 +53,35 @@ export default function Modal04() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="border-gray-100-500 w-full max-w-2xl transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="border-gray-100-500 w-full max-w-4xl transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-3xl font-medium leading-10 text-amber-500 lg:text-9xl"
+                    className="text-3xl font-medium leading-10 text-amber-500 lg:text-3xl"
                   >
-                    Info
+                    Ihr Event im Rettungsanker! 
                   </Dialog.Title>
                   <div className="mt-2">
                     <div className="mt-2 lg:mt-1 ">
-                      <p className=" p-3 text-justify text-xs text-gray-100 lg:text-xl">
+                      <p className=" p-3 text-justify text-xs text-gray-100 lg:text-[.95rem] leading-5">
                         Der Rettungsanker und seine Räumlichkeiten sind eine ideale Location um Ihre
                         privaten oder geschäftlichen Anlässe wie Geburtstage, Hochzeiten und
                         Verlobungen, aber auch Firmen- oder Belegschaftspartys zu gestalten. Im
                         Rahmen einer "geschlossenen Gesellschaft" steht Ihnen der Rettungsanker mit
-                        seinen Räumlichkeiten für Ihre Feierlichkeiten zur Verfügung. Auch können
+                        seinen Räumlichkeiten für Ihre Feierlichkeiten zur Verfügung. <br/><br/>Auch können
                         wir Ihnen - falls dies erwünscht - ein vollumfängliches{' '}
                         <span className="font-bold text-yellow-400">Catering</span> anbieten. Hier
-                        sind Ihren Wünschen im Grunde genommen keine Grenzen gesetzt. Unsere
+                        sind Ihren Wünschen im Grunde genommen keine Grenzen gesetzt. <br/><br/> Unsere
                         Koperationspartner{' '}
-                        <LogoLeckerladen className="inline h-12 w-20 align-middle" /> sind für
+                        <LogoLeckerladen className="inline h-7 w-20 align-middle" /> sind für
                         ausgezeichnete und ideenreiche Apero-Buffets oder Menues besoders
                         ausgewiesen und werden nichts unversucht lassen Ihre Wünsche und Ideen
-                        umzusetzten. Nähere Informationen zur Planung Ihres Events besprechen wir am
-                        sinnvollsten nach{' '}
-                        <span className="font-bold text-yellow-400">
+                        umzusetzten.<br/><br/> Nähere Informationen zur Planung Ihres Events besprechen wir am
+                        sinnvollsten nach <span className="font-bold text-yellow-400">
                           Vereinbarung eines persönlichen Termins
                         </span>
                         . Senden Sie uns eine e-mail oder sprechen Sie uns direkt im Rettungsanker
-                        an!!! Wir freuen uns Ihre Feierlichkeiten professionell begleiten zu dürfen.
-                        Michael Schreck und das Team Rettungsanker."{' '}
+                        an!!! Wir freuen uns Ihre Feierlichkeiten professionell begleiten zu dürfen.<br/><br/>
+                        Michael Schreck und das Team Rettungsanker.
                       </p>
                     </div>
                   </div>

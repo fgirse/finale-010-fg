@@ -170,7 +170,7 @@
 
 			// CREATE PRELOAD DIV
 
-			wrapper.append('<div class="preload"></div>');
+			wrapper.append('<div className="preload"></div>');
 
 
 
@@ -344,7 +344,7 @@
 
 						// CREATE AUDIO DIV
 
-						wrapper.append('<audio class="audio_player" src="'+ options.audioFilePath +'"></audio>');
+						wrapper.append('<audio className="audio_player" src="'+ options.audioFilePath +'"></audio>');
 
 
 
@@ -850,7 +850,7 @@
 
 			// CREATE PRELOAD DIV
 
-			wrapper.append('<div class="preload"></div>');
+			wrapper.append('<div className="preload"></div>');
 
 
 
@@ -1024,7 +1024,7 @@
 
 						// CREATE AUDIO DIV
 
-						wrapper.append('<audio class="audio_player" src="'+ options.audioFilePath +'"></audio>');
+						wrapper.append('<audio className="audio_player" src="'+ options.audioFilePath +'"></audio>');
 
 
 

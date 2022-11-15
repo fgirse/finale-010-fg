@@ -208,7 +208,7 @@
             var o
             return (
               (function (e, t) {
-                if (!(e instanceof t)) throw new TypeError('Cannot call a class as a function')
+                if (!(e instanceof t)) throw new TypeError('Cannot call a className as a function')
               })(this, S),
               h(p((o = v.call(this, t))), 'innerContainerRef', (0, e.createRef)()),
               h(p(o), 'customScrollbarRef', (0, e.createRef)()),

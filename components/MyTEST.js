@@ -8,9 +8,9 @@ const MyTEST=() => {
 			<>
 			
 			if (typeof window !== "undefined")
-			<p className="text-center headingF text-yellow-500 text-5xl">History Timeline</p>
+			<p className="text-center headingF  text-3xl">History Timeline</p>
 			{
-				<iframe className="mx-auto"  src="../html6/index.html" width="75%" height="630"></iframe>
+				<iframe className="mx-auto"  src="../html8/index.html" width="75%" height="630"></iframe>
 			}
 			else
 			<p className="text-center text-[8rem] text-red-500">TEST!!!</p>

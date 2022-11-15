@@ -5,7 +5,7 @@ import HeroTeam from '../components/Animationen/HeroTeamAnimated'
 const team = () => {
   return (
     <>
-      <section className="mx-auto w-full border-t-8 border-b-8 border-amber-500 bg-sky-700 bg-[url('/Maritim.png')] bg-cover bg-no-repeat py-0">
+     
         <div className=" mx-auto px-4">
           <div className="mx-auto mb-12 max-w-3xl text-center lg:mb-0">
             <span>
@@ -134,16 +134,14 @@ const team = () => {
                   height="250"
                   alt="Portrait"
                 />
-                <h3 className="font-heading mb-1 text-4xl font-bold">Simon</h3>
-                <p className="text-3xl text-gray-400">Obermaat</p>
-              </div>
-            </div>
-</div>*/}
-          </div>
-        </div>
-      </section>
-    </>
+  <h3 className="font-heading mb-1 text-4xl font-bold">Simon</h3>*/}
+        
+    </div>
+    </div>
+    
+   </>
   )
+
 }
 
 export default team

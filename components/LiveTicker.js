@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const LiveTicker = () => {
   return (
-    <div className="mt-12vw leading-0 fixed z-50 w-6/12 overflow-x-hidden bg-lime-400 text-center text-[.66rem] font-black text-white lg:text-[1.2rem]">
+    <div className="leading-0 fixed z-50 w-6/12 overflow-x-hidden bg-lime-400 text-center text-[.66rem] font-black text-white lg:text-[0.8rem]">
       <Marquee>
         <FontAwesomeIcon className="mr-3 inline h-5 w-5 p-0 text-slate-300" icon={faVolleyball} />
         <FontAwesomeIcon className="mr-3 inline h-5 w-5 p-0 text-slate-300" icon={faVolleyball} />

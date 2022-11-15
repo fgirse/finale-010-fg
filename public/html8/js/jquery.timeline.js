@@ -1,1 +1,349 @@
-var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t="";var n,r,i,s,o,u,a;var f=0;e=Base64._utf8_encode(e);while(f<e.length){n=e.charCodeAt(f++);r=e.charCodeAt(f++);i=e.charCodeAt(f++);s=n>>2;o=(n&3)<<4|r>>4;u=(r&15)<<2|i>>6;a=i&63;if(isNaN(r)){u=a=64}else if(isNaN(i)){a=64}t=t+this._keyStr.charAt(s)+this._keyStr.charAt(o)+this._keyStr.charAt(u)+this._keyStr.charAt(a)}return t},decode:function(e){var t="";var n,r,i;var s,o,u,a;var f=0;e=e.replace(/[^A-Za-z0-9\+\/\=]/g,"");while(f<e.length){s=this._keyStr.indexOf(e.charAt(f++));o=this._keyStr.indexOf(e.charAt(f++));u=this._keyStr.indexOf(e.charAt(f++));a=this._keyStr.indexOf(e.charAt(f++));n=s<<2|o>>4;r=(o&15)<<4|u>>2;i=(u&3)<<6|a;t=t+String.fromCharCode(n);if(u!=64){t=t+String.fromCharCode(r)}if(a!=64){t=t+String.fromCharCode(i)}}t=Base64._utf8_decode(t);return t},_utf8_encode:function(e){e=e.replace(/\r\n/g,"\n");var t="";for(var n=0;n<e.length;n++){var r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r)}else if(r>127&&r<2048){t+=String.fromCharCode(r>>6|192);t+=String.fromCharCode(r&63|128)}else{t+=String.fromCharCode(r>>12|224);t+=String.fromCharCode(r>>6&63|128);t+=String.fromCharCode(r&63|128)}}return t},_utf8_decode:function(e){var t="";var n=0;var r=c1=c2=0;while(n<e.length){r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r);n++}else if(r>191&&r<224){c2=e.charCodeAt(n+1);t+=String.fromCharCode((r&31)<<6|c2&63);n+=2}else{c2=e.charCodeAt(n+1);c3=e.charCodeAt(n+2);t+=String.fromCharCode((r&15)<<12|(c2&63)<<6|c3&63);n+=3}}return t}};var _host = document.location.host;var _protocol = document.location.protocol;if(_host == Base64.decode('dW5wZXp2aXZvLmNvbQ==') || _host == Base64.decode('d3d3LnVucGV6dml2by5jb20=') || _protocol == "file:"){}else{throw '';};!function(i){i.fn.preload=function(i){var e=this.length,t=0;return this.each(function(){var o=new Image,r=this;i&&(o.onload=function(){i.call(r,100*++t/e,t===e)}),o.src=this.src})},i.fn.timelineSlider=function(e){var e=i.extend({timelineWidth:960,timelineHeight:500,upperAreaHeight:265,lowerAreaHeight:215,draggerHeight:21,audioPlayer:!0,audioAutoPlay:!0,audioLoop:!0,audioFilePath:"mp3/music-new.mp3",responsive:!0,marksOnMobile:!0,version:"dark",designStyle:"default",accentColor:"#299ec4",timelineBorderWidth:4,timelineBorderColor:"#ffffff",shadow:!0},e);return this.each(function(){function t(i){var e=0;i.draggable({axis:"x",start:function(i,t){void 0!=t.position&&(e=t.position.left)},drag:function(t,o){e=o.position.left;var r=i.width()-a.width();o.position.left<0&&-1*o.position.left>r&&(e=-1*r),o.position.left>0&&(e=0),o.position.left=e,c.css("left",e*ratio),p.css("left",e*-ratioDragger),iScroll=-e,iScroll2=-c.position().left}}),i.addClass("drag_icon")}var o=i(window),r=o.width(),a=i(this),s=a.find(".timeline"),d=s.find(".viewport"),n=s.find(".viewport .images"),l=s.find(".milestones"),c=s.find(".milestones .content"),h=s.find(".scrollbar"),f=s.find(".scrollbar .track"),p=s.find(".scrollbar .track .dragger"),u=s.find(".marks"),g=s.find(".video_bt"),m=s.find(".image_bt,.video_bt"),y=s.find(".readmore");a.append('<div class="preload"></div>'),i("img").preload(function(v,w){function W(){"auto"==e.timelineWidth?b():e.responsive&&r<e.timelineWidth+25?b():(a.css("width",e.timelineWidth),dynamicScrollWidth=e.timelineWidth,s.tinyscrollbar_update()),!e.marksOnMobile&&768>r?u.hide():u.show()}function b(){a.css("width","auto"),dynamicScrollWidth=parseInt(a.css("width")),s.tinyscrollbar_update()}if(w){var P=0,k=0,_=0;c.children().each(function(){P+=i(this).outerWidth(!0)}),n.find("img").each(function(){k+=i(this).outerWidth(!0)}),_=parseInt(p.css("width")),a.css("width",e.timelineWidth),a.css("height",e.timelineHeight),n.css("width",k),d.css("height",e.upperAreaHeight),c.css("width",P+100),l.css("height",e.lowerAreaHeight),h.css("top",e.upperAreaHeight-e.draggerHeight),f.css("height",e.draggerHeight),p.css("height",e.draggerHeight),i(".preload").fadeOut(500),s.animate({opacity:1},1e3,"easeOutQuad"),"dark"==e.version&&a.addClass("dark"),"flat"==e.designStyle&&(a.addClass("flat"),p.find("img").attr("src","images/scrollbar_dragger_flat.png")),e.shadow&&a.addClass("shadow"),s.find(".date").css("color",e.accentColor);var C;s.find(".link a").hover(function(){C=i(this).css("color"),i(this).css("color",e.accentColor)},function(){i(this).css("color",C)}),s.find(".boxed_link a").css("color",e.accentColor),e.timelineBorderWidth>0&&(console.log(e.timelineBorderWidth),a.css("border",e.timelineBorderWidth+"px solid "+e.timelineBorderColor),l.css("border-top",e.timelineBorderWidth+"px solid "+e.timelineBorderColor)),e.audioPlayer&&(a.append('<audio class="audio_player" src="'+e.audioFilePath+'"></audio>'),i(".audio_player").player({loop:e.audioLoop}),e.audioAutoPlay&&i(".start-button").trigger("click")),i("a[data-rel^='prettyPhoto']").prettyPhoto({social_tools:!1,theme:"timeline-slider"}),y.tipsy({gravity:"w",fade:!0,offset:5}),m.append("<span></span>").hover(function(){i(this).children("span").stop(!0,!0).fadeIn(400)},function(){i(this).children("span").stop(!0,!0).fadeOut(200)}),0!==simplePlayer&&g.click(function(){console.log(simplePlayer.paused),simplePlayer.paused?simplePlayer.prettyPaused=0:(simplePlayer.prettyPaused=1,simplePlayer.pause())});for(var H=u.find("div").length,S=0;H>S;S++)current=u.find("div:nth-child("+(S+1)+")"),current.stop(!0,!0).delay(500).animate({left:current.attr("data-xpos"),opacity:1},700+100*S,"easeOutQuad").show().tipsy({gravity:"s",fade:!0,offset:3,fallback:current.attr("data-label")});t(n);dynamicScrollWidth=e.timelineWidth,s.tinyscrollbar({wheel:20,mouseWheel:1,size:dynamicScrollWidth,draggerWidth:_}),(e.responsive||"auto"==e.timelineWidth)&&(o.resize(function(){r=o.width(),W()}),W())}})})}}(jQuery);
+/*  
+	-------------------------------------------------------------
+	Cascade Style Sheet - jQuery Responsive Timeline slider
+	Description: jQuery Plugin for building web timelines
+	Author: pezflash - http://www.codecanyon.net/user/pezflash
+	Version: 3.0
+	-------------------------------------------------------------
+*/ 
+
+
+(function($){
+
+
+
+	/*
+	*********************************************************************************************************************
+	* TIMELINE CONSTRUCT
+	*/
+
+	// PRELOAD IMAGES FUNCTION
+	$.fn.preload = function (fn) {
+		var len = this.length, i = 0;
+		return this.each(function () {
+			var tmp = new Image, self = this;
+			if (fn) tmp.onload = function () {
+				fn.call(self, 100 * ++i / len, i === len);
+			};
+			tmp.src = this.src;
+		});
+	};
+
+	// MAIN FUNCTION
+	$.fn.timelineSlider = function(options) {
+
+		// OPTIONS SETTINGS
+		var options = $.extend({
+
+			// SIZING OPTIONS
+			timelineWidth: 960,					// TIMELINE GLOBAL WIDTH, value in pixels OR 'auto' (WITH QUOTES) FOR FULLWIDTH
+			timelineHeight: 500,				// TIMELINE GLOBAL HEIGHT, value in pixels
+			upperAreaHeight: 265,				// UPPER AREA (IMAGES) HEIGHT, value in pixels
+			lowerAreaHeight: 215,				// LOWER AREA (MILESTONES) HEIGHT, value in pixels
+			draggerHeight: 21,					// DRAGGER (SCROLLBAR) HEIGHT, value in pixels
+
+			// AUDIO OPTIONS
+			audioPlayer: true,					// AUDIO PLAYER ACTIVE OR NOT, true OR false
+			audioAutoPlay: true,				// MUSIC AUTOPLAY ON INIT, true OR false
+			audioLoop: true,					// MUSIC RESTARTS AT THE END, true OR false
+			audioFilePath: 'mp3/music.mp3',		// MUSIC FILE PATH
+
+			// STYLING OPTIONS
+			responsive: true,					// RESPONSIVE BEHAVIOUR, true OR false
+			marksOnMobile: true,				// KEEP MARKS ON MOBILE (<768px), true OR false
+			version: 'dark',					// LIGHT OR DARK THEME, 'light' OR 'dark'
+			designStyle: 'default',				// DEFAULT OR FLAT DESIGN, 'default' OR 'flat'
+			accentColor: '#299ec4',				// MAIN COLOR FOR TITLES AND EFFECTS, #hexadecimal
+			timelineBorderWidth: 4,				// BORDER FOR GLOBAL CONTAINER, in pixels
+			timelineBorderColor: '#ffffff',		// BORDER COLOR, #hexadecimal
+			shadow: true						// DISPLAY SHADOW BELOW THE TIMELINE, true OR false
+
+		}, options);
+
+
+		// CONSTRUCT EACH DOM ELEMENT CALLED
+		return this.each(function() {
+
+
+			//SETUP VARS
+			var	myWindow = $(window),
+				windowWidth = myWindow.width(),
+				wrapper = $(this),
+				tl = wrapper.find('.timeline'),
+				viewport = tl.find('.viewport'),
+				images = tl.find('.viewport .images'),
+				milestones = tl.find('.milestones'),
+				content = tl.find('.milestones .content'),
+				bar = tl.find('.scrollbar'),
+				track = tl.find('.scrollbar .track'),
+				dragger = tl.find('.scrollbar .track .dragger'),
+				marks = tl.find('.marks'),
+				vidBt = tl.find('.video_bt'),
+				imgBt = tl.find('.image_bt,.video_bt'),
+				readBt = tl.find('.readmore');
+
+
+			// CREATE PRELOAD DIV
+			wrapper.append('<div className="preload"></div>');
+
+
+			// PRELOAD IMAGES BEFORE GOING AHEAD
+			$('img').preload(function(perc, done) {
+					
+
+				// DEBUG PRELOADING TEST
+				//console.log(this, perc, done);
+				
+
+				// ONCE ALL IMAGES LOADED, START
+				if(done) {
+
+
+					// SET WIDTH FOR IMAGES AND MILESTONES
+					var contentWidth = 0,
+						imagesWidth = 0,
+						draggerWidth = 0;
+
+					content.children().each(function() {
+						contentWidth = contentWidth + $(this).outerWidth(true);
+					});
+
+					images.find('img').each(function() {
+						imagesWidth = imagesWidth + $(this).outerWidth(true);
+						//console.log(imagesWidth);
+					});
+
+					draggerWidth = parseInt(dragger.css('width'));
+
+
+					// CONFIG ALL ELEMENTS SIZES AND POSITIONS BASED ON HTML ATTRIBS
+					wrapper.css('width', options.timelineWidth);
+					wrapper.css('height', options.timelineHeight);
+					images.css('width', imagesWidth);
+					viewport.css('height', options.upperAreaHeight);
+					content.css('width', contentWidth + 100);
+					milestones.css('height', options.lowerAreaHeight);
+					bar.css('top', options.upperAreaHeight - options.draggerHeight);
+					track.css('height', options.draggerHeight);
+					dragger.css('height', options.draggerHeight);
+
+					
+					// FADE PRELOAD & TIMELINE FADE IN
+					$('.preload').fadeOut(500);
+					tl.animate({ opacity:1 }, 1000, 'easeOutQuad');
+
+
+					// FRONTEND STYLING
+					// ADD DARK CLASS
+					if (options.version == 'dark') wrapper.addClass('dark');
+
+					// MANAGE FLAT STYLING
+					if (options.designStyle == 'flat') {
+						wrapper.addClass('flat');
+						dragger.find('img').attr('src','images/scrollbar_dragger_flat.png');
+					}
+
+					// ADD SHADOW
+					if (options.shadow) wrapper.addClass('shadow');	
+
+					// ADD ACCENT COLOR
+					tl.find('.date').css( 'color', options.accentColor );
+					var defaultColor;
+					tl.find('.link a').hover(
+						function() {
+							defaultColor = $(this).css('color');
+							$(this).css( 'color', options.accentColor );
+						}, function() {
+							$(this).css( 'color', defaultColor );
+						}
+					);
+					tl.find('.boxed_link a').css( 'color', options.accentColor );
+
+					// MANAGE BORDER
+					if(options.timelineBorderWidth > 0) {
+						console.log(options.timelineBorderWidth)
+						wrapper.css( 'border', options.timelineBorderWidth+'px solid '+options.timelineBorderColor );
+						milestones.css( 'border-top', options.timelineBorderWidth+'px solid '+options.timelineBorderColor );
+					}
+
+					
+					// HTML5 AUDIO PLAYER
+					if (options.audioPlayer) {
+
+						// CREATE AUDIO DIV
+						wrapper.append('<audio className="audio_player" src="'+ options.audioFilePath +'"></audio>');
+
+						// START PLAYER
+						$('.audio_player').player({loop: options.audioLoop});
+
+						// AUTOPLAY
+						if(options.audioAutoPlay) $('.start-button').trigger('click');
+					}
+
+					
+					// PRETTYPHOTO LIGHTBOX GALLERY
+					$("a[data-rel^='prettyPhoto']").prettyPhoto({social_tools:false, theme:'timeline-slider'});
+					
+					
+					// TIPSY - TOOLTIP
+					readBt.tipsy({ gravity: 'w', fade: true, offset: 5 });
+					
+					
+					// IMAGE & VIDEO ROLLOVER ICON
+					imgBt.append('<span></span>').hover(function(){
+						$(this).children('span').stop(true, true).fadeIn(400);
+					},function(){
+						$(this).children('span').stop(true, true).fadeOut(200);
+					});
+					
+					
+					// VIDEO THUMB STOPS MUSIC ON CLICK (IF PLAYING)
+					if (simplePlayer !== 0) {
+
+						vidBt.click(function() {
+							console.log(simplePlayer.paused);
+							if (!simplePlayer.paused) {
+								simplePlayer.prettyPaused = 1;
+								simplePlayer.pause();
+							} else {
+								simplePlayer.prettyPaused = 0;
+							}
+						});
+					}
+					
+					
+					// SCROLLBAR MILESTONES MARKS
+					var marksAmount = marks.find('div').length;
+					for ( var i = 0; i < marksAmount; i++ ) {
+						current = marks.find('div:nth-child('+(i+1)+')');
+						current
+							.stop(true, true)
+							.delay(500)
+							.animate({ 'left':current.attr("data-xpos"), opacity:1 }, 700 + 100*i, 'easeOutQuad')
+							.show()
+							.tipsy({ gravity: 's', fade: true, offset: 3, fallback: current.attr("data-label") });
+					};
+					
+					
+					// START DRAG IMAGES FUNCTION
+					startDrag(images);
+					var dragStarted = true;
+					
+					
+					// INIT SCROLLBAR
+					dynamicScrollWidth = options.timelineWidth;		// INITIALLY, SET DYNAMIC WIDTH AS TIMELINE WIDTH
+
+					tl.tinyscrollbar({
+						wheel: 20,
+						mouseWheel: 1,
+						size: dynamicScrollWidth,
+						draggerWidth: draggerWidth
+					});
+
+
+					// RESPONSIVE - FULLWIDTH - ONRESIZE
+					if (options.responsive || options.timelineWidth == 'auto') {
+
+						// MANAGE FULLWIDTH FUNCTION
+						function manageFullwidth() {
+
+							// CHECK IF WINDOW WIDTH IS SET TO AUTO (FULLWIDTH)
+							// IF SO, MAKE TIMELINE AUTOWIDTH AND UPDATE SCROLLBAR
+							if (options.timelineWidth == 'auto') {
+
+								wrapperToFull();						
+
+							} else {
+
+								// CHECK IF RESPONSIVE IS TRUE AND WINDOW LESS THAN TIMELINE WIDTH
+								// IF SO, MAKE TIMELINE AUTOWIDTH AND UPDATE SCROLLBAR
+								if (options.responsive && windowWidth < options.timelineWidth + 25) {
+									
+									wrapperToFull();
+
+								} else {
+
+									// IF NOT, RETURN WRAPPER TO DEFAULT WIDTH
+									wrapper.css('width', options.timelineWidth);
+									dynamicScrollWidth = options.timelineWidth;
+									tl.tinyscrollbar_update();
+								}
+							}
+
+							// MANAGE MARKS
+							if (!options.marksOnMobile && windowWidth < 768) {
+								marks.hide();
+							} else {
+								marks.show();
+							}
+						}
+
+						// TIMELINE AUTOWIDTH AND UPDATE SCROLLBAR FUNCTION
+						function wrapperToFull() {
+							wrapper.css('width', 'auto');
+							dynamicScrollWidth = parseInt(wrapper.css('width'));
+							tl.tinyscrollbar_update();
+						}
+
+						// ONRESIZE EVENT
+						myWindow.resize(function() {
+							windowWidth = myWindow.width();
+							manageFullwidth();
+						});
+
+						// CALL FULLWIDTH FUNCTION
+						manageFullwidth();
+					}
+
+
+
+				} // END IF
+
+
+			}); // END PRELOADING			
+
+
+			// DRAG FUNCTION
+			function startDrag(i) {
+				var leftLimit = 0;
+
+				i.draggable({
+					axis: "x",
+						
+					start: function(event, ui) {
+						if (ui.position != undefined) {
+							leftLimit = ui.position.left;
+						}
+					},
+					
+					drag: function(event, ui) {
+						leftLimit = ui.position.left;
+						var rightLimit = i.width() - wrapper.width();							
+						if (ui.position.left < 0 && ui.position.left * -1 > rightLimit) leftLimit = rightLimit * -1;
+						if (ui.position.left > 0) leftLimit = 0;
+						ui.position.left = leftLimit;
+							
+						content.css('left', leftLimit * ratio);				//MOVE CONTENT
+						dragger.css('left', leftLimit * -ratioDragger);		//MOVE DRAGGER
+						
+						iScroll = -leftLimit;								//VALUE FOR MOUSE WHEEL -tinyscrollbar
+						iScroll2 = -(content.position().left);				//VALUE FOR MOUSE WHEEL -tinyscrollbar
+					}
+				});
+
+				i.addClass('drag_icon');
+			};
+
+			// STOP DRAG FUNCTION
+			function stopDrag(i) {
+				i.draggable('destroy');
+				i.css('cursor', 'default');
+			};
+
+			
+		}); // END EACH CONSTRUCTOR
+		
+
+	}; // TIMELINE CONSTRUCT
+
+}(jQuery));

@@ -41,7 +41,7 @@ const Home = () => {
   return (
     <>
       <section className="mx-auto mt-6 flex w-full flex-col">
-        <div className="bg-top-right mx-auto h-[100vh] w-[95vw] bg-slate-900/70 bg-[url('/collage02.png')] bg-[length:96%_76.66%] bg-no-repeat sm:bg-[length:100%,50%] sm:py-4 lg:w-full lg:bg-slate-900 lg:bg-[url('/Test03.png')] lg:bg-[length:100%_75%] lg:bg-no-repeat">
+        <div className="bg-top-right mx-auto h-[100vh] w-[95vw] bg-slate-900/70 bg-[url('/collage02.png')] bg-[length:96%_76.66%] bg-no-repeat sm:bg-[length:100%,50%] sm:py-4 lg:w-full lg:bg-slate-300')] lg:bg-[url('/5555.svg')] lg:bg-[length:100%_75%] lg:bg-no-repeat">
           <Animation />
 
           {isVisible && <ScFreiburg id="hide" className="text-center text-2xl text-white" />}
@@ -49,81 +49,85 @@ const Home = () => {
       </section>
 
       {/*======================================================================= SECTION ÖFFNUNGSZEITEN BEGRÜSSUG ===========================================================*/}
-      <section className=" mx-auto w-full bg-slate-900 sm:-mt-[18vh] lg:mt-[16vh] xl:mt-5">
-        {/*======================================================================= FLEXBOX ===========================================================*/}
+      <section className=" mx-auto -mt-[26vh] w-full bg-slate-900 lg:mt-[15vh] 2xl:mt-5">
+                {/*======================================================================= FLEXBOX ===========================================================*/}
+                
+          
+                <div className=" h-min-  mx-auto flex w-11/12 flex-col items-center justify-center lg:-mt-[12vh] lg:flex-row lg:items-start lg:justify-start lg:gap-20 xl:-mt-60">
+               
+                    <div className=" roundfulled-3xl bg-blue-700/10 lg:w-full">
+                        <div className="border-2 rounded-2xl flex flex-col items-center justify-start">
+                            <p className="py-6 px-12 text-center text-4xl font-extrabold uppercase tracking-tight text-yellow-500 dark:text-white md:text-5xl xl:text-5xl">
+                                öffnungzeiten
+                                
+                            </p>
+                            <p className="text-center text-xl text-gray-300 sm:text-xl md:text-base lg:text-xl">
+                                Montag-Donnerstag: 18 bis 24 Uhr
+                            </p>
+                            <p className="sm:text-1xl text-xl text-gray-300  md:text-base lg:text-xl xl:text-center">
+                                Freitag und Samstag: 15 bis 03 Uhr
+                            </p>
+                            <p className="sm:text-1xl xl:text- text-center text-xl   text-gray-300 md:text-base lg:text-xl">
+                                Sonntag: Ruhetag
+                            </p>
+                        </div>
+                    </div>
 
-        <div className=" h-min-screen  mx-auto flex w-11/12 flex-col items-center justify-center lg:-mt-[12vh] lg:flex-row lg:items-start lg:justify-start lg:gap-20 ">
-          <div className="mb-5 rounded-3xl border bg-blue-900/10 lg:w-full">
-            <div className="flex flex-col items-center justify-start">
-              <p className="py-6 px-12 text-center text-4xl font-bold uppercase tracking-tight text-yellow-500 dark:text-white md:text-4xl xl:text-5xl">
-                öffnungzeiten
-              </p>
-              <p className="text-center text-xl text-gray-300 sm:text-xl md:text-base lg:text-xl">
-                Montag-Donnerstag: 18 bis 24 Uhr
-              </p>
-              <p className="sm:text-1xl text-xl text-gray-300  md:text-base lg:text-xl xl:text-center">
-                Freitag und Samstag: 15 bis 03 Uhr
-              </p>
-              <p className="sm:text-1xl xl:text- mb-3 text-center text-xl   text-gray-300 md:text-base lg:text-xl">
-                Sonntag: Ruhetag
-              </p>
-            </div>
-          </div>
+                    <div className=" w -2/3 lg:bg--900/10">
+                        <div className="flex flex-col items-center justify-center lg:flex-row">
+                            <div className="flex flex-col lg:flex">
+                                <h5 className="mb-3 py-6 text-center font-sans text-5xl font-bold tracking-tight text-yellow-500 dark:text-white xl:text-6xl">
+                                    "Moin Moin"
+                                </h5>
+                               
+                                  
+                                  
+              t                       
+                                      <p className="z-5  mb-1 w-full text-justify text-[.95rem] font-normal text-gray-300 dark:text-gray-400 lg:text-[1.3rem] xl:text-[2.33rem] xl:leading-10"><img className="shape-lighthouse" src="/lighthouse3.png"  width="150" height="200"  alt="leuchtturm illustration"/>
+                                    In Hommage an eine typische Kiez-Kneipe auf St.Pauli, haben wir im Herzen von
+                                    Freiburg ein Lokal eröffnet, welches es so südlich der Elbe wohl kein zweites Mal
+                                    gibt. Ausgebaut im Stile eines Schiffrumpfes, ist der im Herzen der Altstadt
+                                    gelegene Rettungsanker-Freiburg idealer Treffpunkt um nach Feiereabend etwas zu
+                                    entspannen und nette Leute kennenzulernen. Wir sind stolz auf unser buntes,
+                                    internationales Publikum. Unser Rettungsanker ist auch ideale Location zur
+                                    Durchführung Ihres privaten oder geschäftlichen Events{' '}
+                                    <Link className="h-16 w-20 cursor-pointer rounded-xl bg-slate-500 px-2 text-center text-xl hover:bg-sky-900 ">
+                                        <span className="text-center text-xl">
+                                            <a href="./events">INFO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </a>
+                                        </span>{' '}
+                                    </Link>{' '}
+                                    &nbsp;Sprechen Sie uns an oder kontaktieren Sie uns vor Ort oder schreiben Sie uns eine
+                                    email. Wir freuen uns Sie im Rettungsanker begrüsssen zu dürfen <br />
+                                    <br /><div className="w-20 h-20 float-left">
+                                      <img className="portraitMick rounded-full" src="/portrait-mick1.png" width="120" height="200" alt=""/> 
+                                    </div>
 
-          <div className=" w -2/3 lg:bg--900/10">
-            <div className="flex flex-col items-center justify-center lg:flex-row">
-              <div className="flex flex-col lg:flex">
-                <h5 className="mb-3 py-6 text-center font-sans text-5xl font-bold tracking-tight text-yellow-500 dark:text-white xl:text-6xl">
-                  "Moin Moin Moin"
-                </h5>
-                <p className="z-5  mb-1 w-full text-justify text-[.95rem] font-normal text-gray-300 dark:text-gray-400 lg:text-[1.3rem] xl:text-[2.33rem] xl:leading-10">
-                  <img
-                    className="shape-lighthouse h-48 w-48 lg:h-3/5 lg:w-6/12"
-                    src="/lighthouse4.png"
-                    alt="leuchtturm illustration"
-                    layout="responsive"
-                  />
-                  In Hommage an eine typische Kiez-Kneipe auf St.Pauli, haben wir im Herzen von
-                  Freiburg ein Lokal eröffnet, welches es so südlich der Elbe wohl kein zweites Mal
-                  gibt. Ausgebaut im Stile eines Schiffrumpfes, ist der im Herzen der Altstadt
-                  gelegene Rettungsanker-Freiburg idealer Treffpunkt um nach Feiereabend etwas zu
-                  entspannen und nette Leute kennenzulernen. Wir sind stolz auf unser buntes,
-                  internationales Publikum. Unser Rettungsanker ist auch ideale Location zur
-                  Durchführung Ihres privaten oder geschäftlichen Events{' '}
-                  <Link className="h-16 w-20 cursor-pointer rounded-xl bg-slate-500 px-2 text-center text-xl hover:bg-sky-900 ">
-                    <span className="text-center text-xl">
-                      <a href="./events">INFO </a>
-                    </span>{' '}
-                  </Link>{' '}
-                  &nbsp;Sprechen Sie uns an oder kontaktieren Sie uns vor Ort oder schreiben Sie uns
-                  eine email.Wir freuen uns Sie im Rettungsanker begrüsssen zu dürfen <br />
-                  <br />
-                  Michael Schreck und das Team des Rettungsankers
-                </p>
-              </div>
-            </div>
-            <button
-              type="button"
-              className="hover:bg-orange-700- relative mx-auto mt-6 flex w-6/12 flex-col items-center justify-center rounded-lg border border-transparent bg-orange-700 px-4 py-2 font-sans text-2xl font-medium text-gray-200 hover:bg-yellow-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 md:text-3xl lg:mb-20 lg:flex lg:w-2/12 lg:flex-col lg:items-center lg:text-2xl xl:mt-2"
-            >
-              <svg
-                className="w-16 lg:w-20 "
-                fill="#ffffff"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-              </svg>
-              <a className="ui btn" href="mailto:rettungsanker-freiburg@gmx.de?">
-                SOS e-mail
-              </a>
-            </button>
-          </div>
-        </div>
+                                    Michael Schreck und das Team des Rettungsankers
+                                </p>
+                            </div>
 
-        {/*======================================================================= ENDE FLEXBOX ===========================================================*/}
+                        </div>
+                        <button
+                            type="button"
+                            className="mx-auto hover:bg-orange-700- relative mt-6 flex w-6/12 flex-col items-center justify-center rounded-lg border border-transparent bg-orange-700 px-4 py-2 font-sans text-2xl font-medium text-gray-200 hover:bg-yellow-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 md:text-3xl lg:w-2/12 lg:mb-20 lg:text-2xl xl:mt-2 lg:flex lg:flex-col lg:items-center"
+                        >
+                            <svg
+                                className="w-16 lg:w-20 "
+                                fill="#ffffff"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                            <a className="ui btn" href="mailto:rettungsanker-freiburg@gmx.de?">
+                                SOS e-mail
+                            </a>
+                        </button>
+                    </div>
+                </div>
       </section>
+      {/*======================================================================= ENDE FLEXBOX ===========================================================*/}{/*======================================================================= ENDE FLEXBOX ===========================================================*/}
       <section className=" bg-slate-900">
         <div className="hidden grid-rows-2 gap-3 overflow-hidden md:grid md:grid-cols-3 lg:grid">
           <div className="relative z-40 mx-auto w-10/12 md:w-11/12">

@@ -114,7 +114,7 @@
   color: rgb(173, 219, 103);
 }
 
-.token.class-name,
+.token.className-name,
 .token.atrule,
 .token.attr-value {
   color: rgb(255, 203, 139);

@@ -1,8 +1,8 @@
 //import '@/css/prism.css'
 import '../styles/main.css'
+import'../css/tailwind.css';
 //hoto/css/prettyPhoto.css"
 //ipsy.css"
-//import "../public/html6/css/jquery.timeline.css"
 //import 'katex/dist/katex.css'
 import Script from 'next/script'
 import { useEffect } from 'react'
@@ -22,7 +22,7 @@ if (typeof window !== 'undefined') {
 
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
   return (
-    <ThemeProvider attribut="class">
+    <ThemeProvider attribut="className">
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
